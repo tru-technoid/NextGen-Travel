@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# NextGen Travel - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This folder contains the frontend code for the **NextGen Travel** application, built to deliver a seamless user experience for travel planning and booking. The frontend is responsible for user interaction and interfaces, including travel buddy matching, destination previews, weather forecasts, and more.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+The frontend code is organized into the following main folders:
 
-### `npm start`
+- **components/**: Contains reusable components for the UI, such as buttons, forms, and navigation.
+- **pages/**: Defines the main pages and views (e.g., Home, Destination Details, Search Results).
+- **assets/**: Stores static files such as images, icons, and CSS styles.
+- **services/**: Contains API service functions to interact with the backend.
+- **utils/**: Utility functions to handle date formatting, input validation, and other helper tasks.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The NextGen Travel frontend offers the following core features:
 
-### `npm test`
+1. **Travel Buddy Matching**: Allows users to find travel companions based on tour dates and plans.
+2. **360-Degree Destination View**: Provides an immersive, virtual preview of travel destinations.
+3. **Weather Forecast**: Displays real-time weather information for selected travel dates.
+4. **Tour Reviews and Ratings**: Allows users to submit reviews and rate their travel experiences.
+5. **Search Functionality**: Enables users to search for tours by state, distance, and group size.
+6. **User Profile Management**: Allows users to update personal information and view past bookings.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To run the frontend locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Node.js** and **npm**: Make sure you have Node.js installed. You can download it [here](https://nodejs.org/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/tru-technoid/NextGen-Travel.git
+   ```
+2. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Running the Development Server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To start the frontend in development mode, use:
+```bash
+npm start
+```
+The application should be running at `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Building for Production
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To create an optimized build for production, run:
+```bash
+npm run build
+```
+This will generate a `build` folder with all production-ready assets.
 
-## Learn More
+## Configuration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **API Endpoint**: Update the `apiConfig.js` file in the `services` folder to configure the base URL of the backend API.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Testing
 
-### Code Splitting
+To run frontend tests:
+```bash
+npm test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technologies Used
 
-### Analyzing the Bundle Size
+- **React.js**: JavaScript library for building user interfaces.
+- **Axios**: HTTP client for API requests.
+- **CSS/SCSS**: Styles for layout and design.
+- **Jest**: Testing framework for JavaScript.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+1. Fork the project.
+2. Create a new branch (`feature/YourFeature`).
+3. Commit your changes.
+4. Push to the branch.
+5. Open a Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## License
 
-### Advanced Configuration
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+### Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For any questions or support, please contact us at [trusharpatel605@gmail.com](mailto:trusharpatel605@gmail.com).
