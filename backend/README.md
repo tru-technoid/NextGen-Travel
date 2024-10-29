@@ -60,7 +60,7 @@ The NextGen Travel backend provides the following key functionalities:
    - Create a `.env` file in the root directory.
    - Add the following variables:
      ```plaintext
-     PORT=5000
+     PORT=4000
      MONGODB_URI=your_mongodb_connection_string
      JWT_SECRET=your_jwt_secret
      WEATHER_API_KEY=your_weather_api_key
