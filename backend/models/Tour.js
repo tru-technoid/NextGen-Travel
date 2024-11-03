@@ -11,7 +11,14 @@ const tourSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    
+    dayPack:{
+      type:Number,
+      required: true,
+    },
+    nightPack:{
+      type:Number,
+      required: true,
+    },
     distance: {
       type: Number,
       required: true,
@@ -32,7 +39,6 @@ const tourSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
-
     reviews: [
       {
         type: mongoose.Types.ObjectId,
@@ -43,6 +49,18 @@ const tourSchema = new mongoose.Schema(
     featured: {
       type: Boolean,
       default: false,
+    },
+    geoTitle : {
+      type: String,
+      required: true,
+    },
+    geoUrl : {
+      type: String,
+      required: true,
+    },
+    direcUrl : {
+      type: String,
+      required: true,
     },
   },
   { timestamps: true }

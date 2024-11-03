@@ -28,6 +28,11 @@ const bookingSchema = new mongoose.Schema(
         type: Date,
         required: true
     },
+    pricePack: {
+      type: Number,
+      required: true
+    },
+
   },
   { timestamps: true }
 );
