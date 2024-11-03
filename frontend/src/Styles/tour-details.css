@@ -130,7 +130,7 @@
 }
 
 .geo_three iframe{
-    width: 640px;
+    width: 760px;
     height: 350px;
     cursor: pointer;
 }
@@ -139,6 +139,7 @@
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 
 .weather-section {
     margin-top: 2rem;

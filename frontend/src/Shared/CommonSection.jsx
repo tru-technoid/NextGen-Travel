@@ -1,7 +1,6 @@
  import React from 'react'
  import './common-section.css'
  import { Container, Row, Col } from 'reactstrap';
-
 const CommonSection = ({title}) => {
   return (
     <div>
@@ -14,7 +13,7 @@ const CommonSection = ({title}) => {
         </Container>
        </section>
     </div>
-  );
+  )
 }
 
 export default CommonSection

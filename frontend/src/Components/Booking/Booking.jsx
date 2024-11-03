@@ -23,7 +23,7 @@ const Booking = ({ tour, avgRating }) => {
     }))
   };
 
-  const serviceFee = 10
+  const serviceFee = 100
   const totalAmount = Number(price) * Number(credentials.guestSize) + Number(serviceFee)
 
   //send data to server
@@ -37,7 +37,7 @@ const Booking = ({ tour, avgRating }) => {
     <div className="booking">
       <div className="booking__top d-flex align-items-center justify-content-between">
         <h3>
-          ${price} <span>/per person</span>
+        ₹ {price} <span>/ Per person</span>
         </h3>
         <span className="tour__rating d-flex align-items-center">
           <i class="ri-star-s-fill"></i>
@@ -94,16 +94,16 @@ const Booking = ({ tour, avgRating }) => {
         <ListGroup>
             <ListGroupItem className="border-0 px-0">
                 <h5 className="d-flex align-items-center gap-1">
-                    ${price} <i class="ri-close-line"> 1 person</i></h5>
-                <span>${price}</span>
+                ₹ {price} <i class="ri-close-line"> Per person</i></h5>
+                <span>₹ {price}</span>
             </ListGroupItem>
             <ListGroupItem className="border-0 px-0">
                 <h5>Service Charge</h5>
-                <span>${serviceFee}</span>
+                <span>₹ {serviceFee}</span>
             </ListGroupItem>
             <ListGroupItem className="border-0 px-0">
                 <h5>Total</h5>
-                <span>${totalAmount}</span>
+                <span>₹ {totalAmount}</span>
             </ListGroupItem>
         </ListGroup>
 

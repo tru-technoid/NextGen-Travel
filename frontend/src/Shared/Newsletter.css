@@ -5,7 +5,10 @@
 }
 
 .newsletter_img img{
-    width: 100%;
+    padding-top: 40px;
+    padding-left: 120px;
+    margin-left: 60px;
+    width: 70%;
 }
 
 .newsletter_content{
@@ -31,7 +34,7 @@
 .newsletter_input input{
     border: none;
     font-size: 1rem;
-    color: var(--secondary-color);
+    color: var(--heading-color);
 }
 
 .newsletter_input input:focus{

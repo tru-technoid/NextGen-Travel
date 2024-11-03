@@ -4,6 +4,13 @@ import {Container, Row, Col} from 'reactstrap';
 import Img1 from '../assets/images/img1.jpg'
 import Img2 from '../assets/images/img2.jpg'
 import Img3 from '../assets/images/img3.webp'
+import Img4 from '../assets/images/img4.png'
+import Img5 from '../assets/images/img5.jpg'
+import Img6 from '../assets/images/img6.png'
+import Img7 from '../assets/images/img7.jpg'
+import Img8 from '../assets/images/img8.jpg'
+import Img9 from '../assets/images/img9.jpg'
+import Img10 from '../assets/images/img10.jpg'
 import Subtitle from './../Shared/Subtitle';
 import experienceImg from '../assets/images/experience.png'
 
@@ -39,7 +46,7 @@ const Home = () => {
             </div>
           </Col>
           
-          <Col lg='2'>
+          {/* <Col lg='2'>
             <div className="img-box">
               <img src={Img1} alt="" />
             </div>
@@ -53,7 +60,23 @@ const Home = () => {
             <div className="img-box">
               <img src={Img3} alt="" />
             </div>
-          </Col>
+          </Col> */}
+        <Col lg='4'>
+        <div className="banner">
+          <div className="slider" style={{ "--quantity": "10" }}>
+            <div className="item" style={{ "--position": 1 }}><img src={Img1} alt="" /></div>
+            <div className="item" style={{ "--position": 2 }}><img src={Img2} alt="" /></div>
+            <div className="item" style={{ "--position": 3 }}><img src={Img3} alt="" /></div>
+            <div className="item" style={{ "--position": 4 }}><img src={Img4} alt="" /></div>
+            <div className="item" style={{ "--position": 5 }}><img src={Img5} alt="" /></div>
+            <div className="item" style={{ "--position": 6 }}><img src={Img6} alt="" /></div>
+            <div className="item" style={{ "--position": 7 }}><img src={Img7} alt="" /></div>
+            <div className="item" style={{ "--position": 8 }}><img src={Img8} alt="" /></div>
+            <div className="item" style={{ "--position": 9 }}><img src={Img9} alt="" /></div>
+            <div className="item" style={{ "--position": 10 }}><img src={Img10} alt="" /></div>
+          </div>
+        </div>
+        </Col>
 
           <SearchBar/>
         </Row>

@@ -6,8 +6,9 @@
 }
 
 .login__img img{
-    width: 70%;
+    width: 60%;
     object-fit: contain;
+    padding-top: 50px;
 }
 
 .login__form{
@@ -17,8 +18,10 @@
 }
 
 .login__container{
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  /* box-shadow: #110c2e26 0px 48px 100px 0px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-top: 100px;  
+  border-radius: 20px;
 }
 
 .login__container .user{
@@ -32,6 +35,7 @@
 
 .login__form .user img{
     width: 100%;
+    border-radius: 50%;
 }
 
 .login__form h2{
@@ -42,6 +46,7 @@
 
 .login__form{
     width: 40%;
+    border-radius: 20px;
 }
 
 .login__form input{
@@ -59,8 +64,9 @@
 
 .auth__btn {
     background: var(--heading-color) !important;
-    width: 100%;
-    color: #fff !important;
+    width: 35%;
+    color: #0a0000 !important;
+    margin-left: 73px;
 }
 
 .login__form p{

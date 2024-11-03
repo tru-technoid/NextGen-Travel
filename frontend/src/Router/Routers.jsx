@@ -1,6 +1,7 @@
 import React from 'react'
 import {Routes, Route, Navigate} from 'react-router-dom'
 import Home from './../Pages/Home'
+import About from './../Pages/About'
 import Tours from './../Pages/Tours'
 import TourDetails from './../Pages/TourDetails'
 import Login from './../Pages/Login'
@@ -14,6 +15,7 @@ const Routers = () => {
       <Routes>
         <Route path='/' element={<Navigate to='/home'/>} />
         <Route path='/home' element={<Home/>} />
+        <Route path='/about' element={<About/>} />
         <Route path='/tours' element={<Tours/>} />
         <Route path='/tours/:id' element={<TourDetails/>} />
         <Route path='/login' element={<Login/>} />

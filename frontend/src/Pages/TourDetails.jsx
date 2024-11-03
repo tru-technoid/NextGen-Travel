@@ -1,55 +1,71 @@
-import React,{useRef,useState,useEffect} from "react";
+import React,{useRef,useState,useEffect, useContext} from "react";
 import "../Styles/tour-details.css";
 import { Col, Container, Form, ListGroup, Row } from "reactstrap";
 import { useParams } from "react-router-dom";
-import tourData from "../assets/data/tours";
 import calculateAvgRating from "./../Utils/AvgRating";
 import avatar from "../assets/images/avatar.png";
-import Booking from "../Components/Booking/Booking";
+import Booking from "../Components/Bookings/Booking";
 import 'remixicon/fonts/remixicon.css';
-
+import Newsletter from "../Shared/Newsletter";
+import useFetch from "../Hooks/useFetch";
+import { BASE_URL } from "../Utils/config";
+import { AuthContext } from "../context/AuthContext";
+{/*             Transfers & Sightseeing by AC Vehicles suitable to the group size.
+            Accommodation in the mentioned or Similar hotels. Daily Breakfast, Lunch & Dinner Included as per the Inclusions. */}
 const TourDetails = () => {
   const { id } = useParams();
-  const reviewMsgRef = useRef('')
+  const reviewMsgRef = useRef("")
   const [tourRating, setTourRating]=useState(null);
+  const {user} = useContext(AuthContext);
 
   const [weatherData, setWeatherData] = useState(null);
   const [selectedDate, setSelectedDate] = useState(null);
 
-  //This Is static data later we will call our API and load our dtabase
-  const tour = tourData.find((tour) => tour.id === id);
+  //Fetch Data From Database
+  const {data:tour, loading, error } = useFetch(`${BASE_URL}/tours/${id}`);
 
   //submit request to server
-  const submitHandler = e=>{
-    e.preventDefault()
+  const submitHandler = async e =>{
+    e.preventDefault();
+
     const reviewText = reviewMsgRef.current.value;
 
-    //For Check   alert(`${reviewText},${tourRating}`)
+    try {
 
-    //later call api
-  }
+      if(!user || user === undefined || user === null){
+        alert("Please Sign In !!")
+      }
 
-      // Fetch weather data on component mount (optional)
-      useEffect(() => {
-        const fetchInitialWeather = async () => {
-          const apiKey = "149a477cdf88f1a01b95c7e2921344ef"; // Replace with your API key
-          const location = tour.city;
-          const today = new Date().toISOString().split('T')[0]; // Get today's date
+      const reviewObj = {
+        username : user?.username,
+        reviewText,
+        rating : tourRating,
+      }
 
-          const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&dt=${today}`;
+      const res = await fetch(`${BASE_URL}/review/${id}`, {
+        method : 'post',
+        headers: {
+          'content-type':'application/json'
+        },
+        credentials:'include',
+        body:JSON.stringify(reviewObj)
+      })
 
-          try {
-            const response = await fetch(url);
-            const weatherData = await response.json();
-            setWeatherData(weatherData);
-            setSelectedDate(today); // Set initial selected date to today
-          } catch (error) {
-            console.error("Error fetching initial weather data:", error);
-          }
-        };
+      const result = await res.json();
+      if(!res.ok){
+        return alert(result.message);
+      }
+      alert(result.message);
+    } catch (err) {
+      alert(err.message);
+    }
+    //For Check   alert(${reviewText},${tourRating})
 
-        fetchInitialWeather();
-      }, []); // Empty dependency array to run only once on mount
+  };
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[tour]);
 
   const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
@@ -61,7 +77,8 @@ const TourDetails = () => {
       return;
     }
 
-    const apiKey = "YOUR_WEATHER_DATA_KEY"; // Replace with your API key
+    // const apiKey = "3b798f5854678990ae199e0033469294";
+    const apiKey = "149a477cdf88f1a01b95c7e2921344ef"; // Replace with your API key
     const location = tour.city;
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&dt=${selectedDate}`;
@@ -87,6 +104,8 @@ const TourDetails = () => {
   const {
     photo,
     title,
+    dayPack,
+    nightPack,
     desc,
     price,
     address,
@@ -94,8 +113,9 @@ const TourDetails = () => {
     city,
     distance,
     maxGroupSize,
-    geo_title,
-    geo_url
+    geoTitle,
+    geoUrl,
+    direcUrl,
   } = tour;
 
   const { totalRating, avgRating } = calculateAvgRating(reviews);
@@ -107,7 +127,15 @@ const TourDetails = () => {
     <>
       <section>
         <Container>
-          <Row>
+          {
+            loading && <h4 className="text-center pt-5">Loading.....</h4>
+          }
+          {
+            error && <h4 className="text-center pt-5">{error}</h4>
+          }
+          {
+            !loading && !error &&
+            <Row>
             <Col lg="8">
               <div className="tour__content">
                 <img src={photo} alt="" />
@@ -140,8 +168,7 @@ const TourDetails = () => {
                       {city}
                     </span>
                     <span>
-                      <i class="ri-money-dollar-circle-line"></i>
-                      {price} / per person
+                    ₹ {price} / per person
                     </span>
                     <span>
                       <i class="ri-map-pin-time-line"></i>
@@ -152,18 +179,21 @@ const TourDetails = () => {
                       {maxGroupSize} people
                     </span>
                   </div>
+
+                {/* ... 360 View ... */}                  
+                  
                   <br />
                   <div className="geo_three">
-                      <h2>3D View Of {geo_title}</h2>
+                      <h2>3D View Of {geoTitle}</h2>
                       <iframe
-                        src={geo_url}
+                        src={geoUrl}
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
                       ></iframe>
                   </div>
-                 
-                  {/* ... Tour details information */}
+
+                  {/* ... Weather details information */}
 
                   <div className="weather-section"> 
                     <h2>Weather Forecast</h2>
@@ -186,8 +216,19 @@ const TourDetails = () => {
                       </div>
                     )}
                   </div>
+                <br />
+                <div>
+                  <div className="geo_three">
+                      <h2>Intermediate Places Map Of {title}</h2>
+                      <iframe
+                        src={direcUrl}
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                      ></iframe>
+                  </div>
+                </div>
 
-                  {/* ... Tour reviews */}
                   <br />
                   <h5>Description</h5>
                   <p>{desc}</p>
@@ -231,23 +272,22 @@ const TourDetails = () => {
                           <div className="w-100">
                             <div className="d-flex align-items-center justify-content-between">
                               <div>
-                                <h5>CHeck</h5>
+                                <h5>{review.username}</h5>
                                 <p>
-                                  {new Date("01-18-2023").toLocaleDateString(
+                                  {new Date(review.createdAt).toLocaleDateString(
                                     "en-US",
                                     options
                                   )}
                                 </p>
                               </div>
                               <span className="d-flex align-items-center">
-                                5<i class="ri-star-s-fill"></i>
+                                {review.rating}<i class="ri-star-s-fill"></i>
                               </span>
                             </div>
-                            <h6>Amazing tour</h6>
+                            <h6>{review.reviewText}</h6>
                           </div>
                         </div>
                       ))}
-
                     </ListGroup>
                   </div>
                   {/*Tour Review Section end */}
@@ -258,8 +298,10 @@ const TourDetails = () => {
               <Booking tour={tour} avgRating={avgRating} />  
             </Col>
           </Row>
+          }
         </Container>
       </section>
+      <Newsletter />
     </>
   );
 };

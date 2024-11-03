@@ -2,7 +2,7 @@ import React from 'react'
 import './Newsletter.css'
 
 import {Container,Row,Col} from 'reactstrap'
-// import maleTourist from '../assets/images/male-tourist.jpg'
+import maleTourist from '../assets/images/subscribe.png'
 
 
 const Newsletter = () => {
@@ -24,7 +24,7 @@ const Newsletter = () => {
             </Col>
             <Col lg='6'>
                 <div className="newsletter_img">
-                    {/* <img src={maleTourist} alt="" /> */}
+                    <img src={maleTourist} alt="" />
                 </div>
             </Col>
         </Row>

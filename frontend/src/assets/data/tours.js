@@ -6,6 +6,7 @@ import tourImg5 from "../images/tour-img5.jpg";
 import tourImg6 from "../images/tour-img6.jpg";
 import tourImg7 from "../images/tour-img7.jpg";
 import tourImg8 from "../images/tour-img8.jpg";
+//import tourImg9 from "../images/tour-img9.jpeg";
 
 const tours = [
   {
@@ -13,7 +14,7 @@ const tours = [
     title: "Varanasi,Uttar Pradesh",
     city: "Varanasi",
     distance: 300,
-    price: 99,
+    price: 4999,
     address:'Sommewhere',
     maxGroupSize: 10,
     desc: "this is the description",
@@ -38,7 +39,7 @@ const tours = [
     title: "Ramoji Film City, Telangana",
     city: "Hyderabad",
     distance: 400,
-    price: 99,
+    price: 5699,
     address:'Sommewhere',
     maxGroupSize: 8,
     desc: "this is the description",
@@ -59,7 +60,7 @@ const tours = [
     title: "Queen of the Nilgiris, Tamilnadu",
     city: "Ooty",
     distance: 500,
-    price: 99,
+    price: 3399,
     address:'Sommewhere',
     maxGroupSize: 8,
     desc: "this is the description",
@@ -80,7 +81,7 @@ const tours = [
     title: "The Scotland of India, Karnataka",
     city: "Coorg",
     distance: 500,
-    price: 99,
+    price: 2899,
     address:'Sommewhere',
     maxGroupSize: 8,
     desc: "this is the description",
@@ -101,7 +102,7 @@ const tours = [
     title: "Taj Mahal, Uttar Pradesh",
     city: "Agra",
     distance: 500,
-    price: 99,
+    price: 3999,
     address:'Sommewhere',
     maxGroupSize: 8,
     desc: "this is the description",
@@ -120,9 +121,9 @@ const tours = [
   {
     id: "06",
     title: "Aadaman and Nicobar",
-    city: "Japan",
+    city: "Neil",
     distance: 500,
-    price: 99,
+    price: 5699,
     address:'Sommewhere',
     maxGroupSize: 8,
     desc: "this is the description",
@@ -143,7 +144,7 @@ const tours = [
     title: "Gangtok, Sikkim",
     city: "Gangtok",
     distance: 500,
-    price: 99,
+    price: 6699,
     address:'Sommewhere',
     maxGroupSize: 8,
     desc: "this is the description",
@@ -159,7 +160,7 @@ const tours = [
     title: "Dwarka, Gujarat",
     city: "Dwarka",
     distance: 500,
-    price: 99,
+    price: 7399,
     address:'Sommewhere',
     maxGroupSize: 8,
     desc: "this is the description",
@@ -170,6 +171,21 @@ const tours = [
     geo_title:"Shree Dwarkadhish Temple",
     geo_url:"https://www.google.com/maps/embed?pb=!4v1727106954934!6m8!1m7!1sCAoSKkFGMVFpcFBRaE9qZHYxN3NnenlDNWRwUW8xemI2WnFRbm53blZ2Y3RmQQ..!2m2!1d22.2376336!2d68.96740559999999!3f212.82617930602152!4f-4.137967460138839!5f0.7820865974627469",
   },
+
 ];
 
 export default tours;
+
+/*{
+     "title": "Varanasi,Uttar Pradesh",
+      "city": "Varanasi",
+      "distance": 300,
+      "price": 99,
+      "maxGroupSize": 10,
+      "desc": "this is the description",
+      "reviews": [],
+  
+      "photo": "/tour-images/tour-img01.jpg",
+      "featured": true
+}
+*/

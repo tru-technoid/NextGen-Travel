@@ -1,142 +1,531 @@
 [
     {
-      "id": "01",
-      "title": "Westminister Bridge",
-      "city": "London",
-      "address": "Somewhere in London",
+      "title": "Varanasi,Uttar Pradesh",
+      "city": "Varanasi",
       "distance": 300,
       "price": 99,
       "maxGroupSize": 10,
       "desc": "this is the description",
       "reviews": [],
   
-      "photo": "/tour-images/tour-img01.jpg",
+      "photo": "/tour-images/tour-img1.jpg",
       "featured": true
     },
     {
-      "id": "02",
-      "title": "Bali, Indonesia",
-      "city": "Bali",
-      "address": "Somewhere in Indonesia",
+      "title": "Ramoji Film City, Telangana",
+      "city": "Hyderabad",
       "distance": 400,
       "price": 99,
       "maxGroupSize": 8,
       "desc": "this is the description",
       "reviews": [],
   
-      "photo": "/tour-images/tour-img02.jpg",
+      "photo": "/tour-images/tour-img2.jpg",
       "featured": true
     },
     {
-      "id": "03",
-      "title": "Snowy Mountains, Thailand",
-      "city": "Bangkok",
-      "address": "Somewhere in Thailand",
+      "title": "Queen of the Nilgiris, Tamilnadu",
+      "city": "Ooty",
       "distance": 500,
       "price": 99,
       "maxGroupSize": 8,
       "desc": "this is the description",
       "reviews": [],
   
-      "photo": "/tour-images/tour-img03.jpg",
+      "photo": "/tour-images/tour-img3.jpg",
       "featured": true
     },
     {
-      "id": "04",
-      "title": "Beautiful Sunrise, Thailand",
-      "city": "Phuket",
-      "address": "Somewhere in Thailand",
+      "title": "The Scotland of India, Karnataka",
+      "city": "Coorg",
       "distance": 500,
       "price": 99,
       "maxGroupSize": 8,
       "desc": "this is the description",
       "reviews": [],
   
-      "photo": "/tour-images/tour-img04.jpg",
+      "photo": "/tour-images/tour-img4.jpg",
       "featured": true
     },
     {
-      "id": "05",
-      "title": "Nusa Pendia Bali, Indonesia",
-      "city": "Bali",
-      "address": "Somewhere in Indonesia",
+      "title": "Taj Mahal, Uttar Pradesh",
+      "city": "Agra",
       "distance": 500,
       "price": 99,
       "maxGroupSize": 8,
       "desc": "this is the description",
       "reviews": [],
   
-      "photo": "/tour-images/tour-img05.jpg",
+      "photo": "/tour-images/tour-img5.jpg",
       "featured": true
     },
     {
-      "id": "06",
-      "title": "Cherry Blossoms Spring",
-      "city": "Tokyo",
-      "address": "Somewhere in Japan",
+      "title": "Aadaman and Nicobar",
+      "city": "",
       "distance": 500,
       "price": 99,
       "maxGroupSize": 8,
       "desc": "this is the description",
       "reviews": [],
   
-      "photo": "/tour-images/tour-img06.jpg",
+      "photo": "/tour-images/tour-img6.jpg",
       "featured": true
     },
     {
-      "id": "07",
-      "title": "Holmen Lofoten, France",
-      "city": "Paris",
-      "address": "Somewhere in France",
+      "title": "Gangtok, Sikkim",
+      "city": "Gangtok",
       "distance": 500,
       "price": 99,
       "maxGroupSize": 8,
       "desc": "this is the description",
       "reviews": [],
   
-      "photo": "/tour-images/tour-img07.jpg",
+      "photo": "/tour-images/tour-img7.jpg",
       "featured": true
     },
     {
-      "id": "08",
-      "title": "Snowy Mountains, Thailand",
-      "city": "Bangkok",
-      "address": "Somewhere in Thailand",
+      "title": "Dwarka, Gujarat",
+      "city": "Dwarka",
       "distance": 500,
       "price": 99,
       "maxGroupSize": 8,
       "desc": "this is the description",
       "reviews": [],
   
-      "photo": "/tour-images/tour-img03.jpg",
+      "photo": "/tour-images/tour-img3.jpg",
       "featured": true
-    },
-    {
-      "id": "09",
-      "title": "Jaflong, Sylhet",
-      "city": "Sylhet",
-      "address": "Somewhere in Sylhet",
-      "distance": 100,
-      "price": 99,
-      "maxGroupSize": 5,
-      "desc": "this is the description",
-      "reviews": [],
-  
-      "photo": "/tour-images/tour-img08.jpg",
-      "featured": false
-    },
-    {
-      "id": "10",
-      "title": "Cox's Bazar Sea Beach",
-      "city": "Chittagong",
-      "address": "Somewhere in Chittagong",
-      "distance": 500,
-      "price": 99,
-      "maxGroupSize": 8,
-      "desc": "this is the description",
-      "reviews": [],
-  
-      "photo": "/tour-images/tour-img09.jpg",
-      "featured": false
     }
-  ]
+]
+
+[
+  {
+    "title": " ",
+    "city": " ",
+    "distance": 500,
+    "price": 99,
+    "maxGroupSize": 8,
+    "desc": " ",
+    "reviews": [],
+    "photo": " ",
+    "featured": true,
+    "geoTitle" : "",
+    "geoUrl" : " ", 
+    "direcTitle" : "",
+    "direcUrl" : "",
+  },
+  {
+    "title": "Andaman With Neil",
+    "city": "Andaman And Nicobar",
+    "distance": 196,
+    "price": 29099,
+    "maxGroupSize" : 8,
+    "desc": "Port Blair(1N)→Havelock Island(2N)→Neil Island(1N)→Port Blair(1N)
+            Port Blair :
+            Cellular Jail, Port Blair | Samudrika Naval Marine Museum | Corbyns Cove Beach | Anthropological Museum
+            Neil Island :
+            Laxmanpur Beach | Bharatpur Beach
+            Havelock Island :
+            Radha Nagar Beach | Elephant Beach
+            Transfers & Sightseeing by AC Vehicles suitable to the group size.
+            Accommodation in the mentioned or Similar hotels.
+            Daily Breakfast, Lunch & Dinner Included as per the Inclusions.",
+    "reviews": [],
+    "photo": "https://www.ghumindiaghum.com/images/Package/9L9gIkGjnk/neil2.png",
+    "featured": true,
+    "geoTitle" : "Naval Marine Museum Samudrika",
+    "geoUrl" : "https://www.google.com/maps/embed?pb=!4v1728926052153!6m8!1m7!1sCAoSLEFGMVFpcE5YY3dhLVJLeFRpNXh6SE45d3ExRUk0YTRhYzBNQnlpRGZNM3lO!2m2!1d11.67180573482082!2d92.7263691810744!3f145.66299160362837!4f-3.1371407895964865!5f0.7820865974627469",
+    "direcTitle" : "Andaman With Neil",
+    "direcUrl" : "https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d417213.7854255234!2d92.50741697185676!3d11.815845928223814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e0!4m5!1s0x308899e188467591%3A0x38a902bfd55186ef!2sJJC8%2BFV7%20North%20Wandoor%20Beach%2C%20Wandoor%2C%20Andaman%20and%20Nicobar%20Islands%20744103!3m2!1d11.6211506!2d92.6171772!4m5!1s0x3088a3007dd18c17%3A0xf28a7e648f0b9ed6!2sPJC8%2B2H%20Tirur%20Waterfall%2C%20Tirur%2C%20Andaman%20and%20Nicobar%20Islands%20744103!3m2!1d11.7200135!2d92.6164915!4m5!1s0x3088bc7850175685%3A0x5815c09b2774901!2sQMM8%2B8MM%20Rani%20Jhansi%20Marine%20National%20Park%2C%20Mile%20Tilek%2C%20Andaman%20and%20Nicobar%20Islands%20744103!3m2!1d11.7833399!2d92.6666714!4m5!1s0x3088d990ab96abe7%3A0xc4d3beedfbcdac43!2sNeil%20Island%20Jetty!3m2!1d11.8390293!2d93.0322923!4m5!1s0x3088d90dcffe55cd%3A0x12903c21afd0f5d7!2sSymphony%20Summer%20Sands%2C%20Neil%20Island!3m2!1d11.8157514!2d93.04810289999999!4m5!1s0x3088d94997714d87%3A0x2e2999e11b036fd!2sSeaShell%2C%20Neil!3m2!1d11.8395177!2d93.0242122!4m5!1s0x3088d212164bb773%3A0x9715637d9a7265b3!2sRadhanagar%20Beach!3m2!1d11.9844552!2d92.95084539999999!4m5!1s0x3088d254dc0a1625%3A0x343c628b2e933d24!2sHavelock%20Island%20Beach%20Resort%2C%20Andaman%20and%20Nicobar%20Islands!3m2!1d12.037421499999999!2d92.987152!5e1!3m2!1sen!2sin!4v1728925180170!5m2!1sen!2sin" 
+  },
+  {
+    "title": "Mount Abu And Udaipur ",
+    "city": "Rajasthan",
+    "distance": 175,
+    "price": 12599,
+    "maxGroupSize": 8,
+    "desc": "Mount Abu(2N)→Udaipur(2N)
+            Mount Abu(Architectural Delight):
+            Nakki Lake | Dilwara Jain Temple
+            Udaipur :
+            Jag Mandir | Saheliyon-ki-Bari | Lake Pichola | City Palace
+            Transfers & Sightseeing by AC Vehicles suitable to the group size.
+            Accommodation in the mentioned or Similar hotels.
+            Daily Breakfast, Lunch & Dinner Included as per the Inclusions.",
+    "reviews": [],
+    "photo": "https://live.staticflickr.com/7450/11593860656_abe6040eca_b.jpg",
+    "featured": true,
+    "geoTitle" : "Jagmandir Island Palace",
+    "geoUrl" : "https://www.google.com/maps/embed?pb=!4v1728928424822!6m8!1m7!1sCAoSLEFGMVFpcE9iRENvUkI0R3NtMTNpNFRiaElVX3NJNXkwMlFkY0ZDcmxjS0x0!2m2!1d24.56783897983417!2d73.67830319983989!3f0.3499917043842906!4f-31.4100418051365!5f0.7820865974627469",
+    "direcTitle" : "",
+    "direcUrl" : "https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d193683.37793125855!2d73.0372304957279!3d24.661643477206912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x395cd5821fdb07d7%3A0x76f07424c2b5d8ab!2sNakki%20Lake%2C%20Mount%20Abu%2C%20Rajasthan%20307501!3m2!1d24.5945112!2d72.7062297!4m5!1s0x395d2b00121155a9%3A0x56a384ebccd624fc!2sDILWARA%20jain%20Temple%2C%20Mount%20Abu%2C%20Rajasthan!3m2!1d24.5925871!2d72.7156104!4m5!1s0x3967ef8ad9890ab9%3A0x52969c88012ca666!2sJag%20Mandir%2C%20Pichola%2C%20Udaipur%2C%20Rajasthan!3m2!1d24.567594399999997!2d73.6777615!4m5!1s0x3967e5d77db7d277%3A0x9d61a020249ce441!2sSaheliyon%20ki%20bari%2C%20Panchwati%2C%20Udaipur%2C%20Rajasthan!3m2!1d24.603006399999998!2d73.6854901!4m5!1s0x3967e56041553fe7%3A0xdfef96846886cdd0!2sLake%20Pichola%2C%20Pichola%2C%20Udaipur%2C%20Rajasthan!3m2!1d24.572!2d73.679!4m5!1s0x3967e5640659a7d5%3A0x9257af76faeaab0e!2sCity%20Palace%2C%20Old%20City%2C%20Udaipur%2C%20Rajasthan!3m2!1d24.576442099999998!2d73.6835109!5e1!3m2!1sen!2sin!4v1728927783231!5m2!1sen!2sin",
+  },
+  {
+    "title": "Rajasthan With Jaisalmer",
+    "city": "Rajasthan",
+    "distance": 1064,
+    "price": 59099,
+    "maxGroupSize": 8,
+    "desc": "→Jaipur(2N)→Jodhpur(1N)→Jaisalmer(2N)→Jodhpur(1N)→Udaipur(2N)→
+    A UNESCO World heritage site- Jantar Mantar at Pushkar,Camel Ride with Sunset & Evening Cultural Show at Jaisalmer,Boat Ride at Lake Pichola, All must see sightseeing with entrances- Jaswant Thada, Moti Mahal and Phool Mahal, City Palace, Maharana Pratap Smarak, Saheliyon-ki-Bari, Lake Pichola, Ranakpur enroute Temple Visit, Gadisar Lake, Patwon ki Haveli, Amber Fort, Jantar Mantar, Pushkar Brahma Temple, City Palace, Albert Hall, Birla Temple, Hawa Mahal.
+    Transfers & Sightseeing by AC Vehicles suitable to the group size.
+            Accommodation in the mentioned or Similar hotels.
+            Daily Breakfast, Lunch & Dinner Included as per the Inclusions.",
+    "reviews": [],
+    "photo": "https://t3.ftcdn.net/jpg/07/13/86/76/360_F_713867632_mjI8JM8hVNes8iFxiaT17RJNbQZHbMrj.jpg",
+    "featured": true,
+    "geoTitle" : "Hawa Mahal",
+    "geoUrl" : "https://www.google.com/maps/embed?pb=!4v1728929634901!6m8!1m7!1sCAoSLEFGMVFpcFBLOHhfZjZ0b1pVU0ZYTlU4bnRiMW13X2ZManUzdVo2c0lyLUQx!2m2!1d26.92388340847839!2d75.82713317717524!3f308.14849039416026!4f12.366923913545307!5f0.7820865974627469", 
+    "direcTitle" : "",
+    "direcUrl" : "https://www.google.com/maps/embed?pb=!1m76!1m12!1m3!1d753046.0489310491!2d73.7314434853519!3d26.22581829556411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m61!3e0!4m5!1s0x39418da796ce107f%3A0xbc93f152cabcfd44!2sPhool%20Mahal%20Palace!3m2!1d26.2989307!2d73.0191378!4m5!1s0x396db14c7ff57069%3A0xe94a0429a18dabbe!2sJantar%20Mantar%20-%20Jaipur!3m2!1d26.924761999999998!2d75.82455999999999!4m5!1s0x396db14b1bd30ba5%3A0x860e5d531eccb20c!2sHawa%20Mahal!3m2!1d26.9240458!2d75.8267144!4m5!1s0x396db1b3145fc8b5%3A0x61d8074ece8d74fa!2sAmer%20Palace%20and%20Fort!3m2!1d26.9851757!2d75.8505326!4m5!1s0x39418dbbe80cf185%3A0xef978326c4f61fbd!2sJaswant%20Thada!3m2!1d26.3040998!2d73.0253613!4m5!1s0x3967e5640659a7d5%3A0x9257af76faeaab0e!2sCity%20Palace!3m2!1d24.576442099999998!2d73.6835109!4m5!1s0x3967e5168e9f7e15%3A0x2c64cbd487a0ea52!2sMaharana%20Pratap%20Smarak!3m2!1d24.600223099999997!2d73.6804597!4m5!1s0x3967e5d77db7d277%3A0x9d61a020249ce441!2sSaheliyon%20ki%20bari!3m2!1d24.603006399999998!2d73.6854901!4m5!1s0x3967e56041553fe7%3A0xdfef96846886cdd0!2sLake%20Pichola!3m2!1d24.572!2d73.679!4m5!1s0x3968200ebea75025%3A0xded51f5beb355524!2sRanakpur%20Jain%20Temple!3m2!1d25.115658!2d73.47287349999999!5e1!3m2!1sen!2sin!4v1728929403240!5m2!1sen!2sin",
+  },
+
+  {
+    "title": "Jaipur with Ranthambore",
+    "city": "Rajasthan",
+    "distance": 198,
+    "price": 15500,
+    "maxGroupSize": 8,
+    "desc": "Jaipur (2N)→Ranthambore (2N)
+    All transfers, sightseeing and intercity travel using A/c vehicleAll must see sightseeing – City Palace, Chandra Mahal, Shri Govind Deo Temple, Jantar Mantar, Amber Fort, Hawa Mahal, Laxmi Narayan Mandir And Ranthambore fort and national park.
+            Accommodation in the mentioned or Similar hotels.
+            Daily Breakfast, Lunch & Dinner Included as per the Inclusions.
+    ",
+    "reviews": [],
+    "photo": "https://ranthambhoreadventure.com/wp-content/uploads/2023/09/slids1-3.png",
+    "featured": true,
+    "geoTitle" : "Ranthambore National Park",
+    "geoUrl" : "https://www.google.com/maps/embed?pb=!4v1728931175196!6m8!1m7!1sCAoSLEFGMVFpcE9XQXRONmRtWDIyTEFZd3ZrZTlNM2hnVGgydnlWSGJ6aklBRDlT!2m2!1d26.0923338!2d76.511725!3f70.7650542332998!4f-23.13734412269342!5f0.7820865974627469", 
+    "direcTitle" : "",
+    "direcUrl" : "https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d763078.2189528042!2d75.52349222387664!3d26.476708255397313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x396db14c1a1543ad%3A0x358ff9d6c12dddf9!2sChandra%20Mahal%2C%20Agra%20Rd%2C%20Gangori%20Bazaar%2C%20J.D.A.%20Market%2C%20Brahampuri%2C%20Jaipur%2C%20Rajasthan!3m2!1d26.927008599999997!2d75.8235041!4m5!1s0x396db40b8620b0c1%3A0x44801531017d7b60!2sThe%20City%20Palace!3m2!1d26.9257943!2d75.8236714!4m5!1s0x396db14c7ff57069%3A0xe94a0429a18dabbe!2sJantar%20Mantar%20-%20Jaipur%2C%20THIKANA%20MANDIR%20SHRI%20GOVINDDEVJI%20MAHARAJ%2C%20Gangori%20Bazaar%2C%20J.D.A.%20Market%2C%20Pink%20City%2C%20Jaipur%2C%20Rajasthan!3m2!1d26.924761999999998!2d75.82455999999999!4m5!1s0x396db1b3145fc8b5%3A0x61d8074ece8d74fa!2sAmber%20Fort%2C%20Amer%20Road%2C%20Devisinghpura%2C%20Amer%2C%20Rajasthan!3m2!1d26.9851757!2d75.8505326!4m5!1s0x396db14b1bd30ba5%3A0x860e5d531eccb20c!2sHawa%20Mahal%2C%20Hawa%20Mahal%2C%20THIKANA%20MANDIR%20SHRI%20GOVINDDEVJI%20MAHARAJ%2C%20Hawa%20Mahal%20Road%2C%20Badi%20Choupad%2C%20J.D.A.%20Market%2C%20Pink%20City%2C%20Jaipur%2C%20Rajasthan!3m2!1d26.9240458!2d75.8267144!4m5!1s0x396e27cf967f7c49%3A0x8784f264e37d8113!2sRanthambhore%20Fort%2C%20Rajasthan!3m2!1d26.0212605!2d76.4520804!4m5!1s0x3971d8f668d65517%3A0x6eb9f78b60bac925!2sRanthambore%20National%20Park%2C%20Ranthambore%20National%20Park%2C%20Rajasthan!3m2!1d25.9775867!2d76.5532869!5e1!3m2!1sen!2sin!4v1728931464437!5m2!1sen!2sin",
+  },
+  {
+    "title": "Kerala-Quick Kochi",
+    "city": "Kerala",
+    "distance": 170,
+    "price": 10899,
+    "maxGroupSize": 8,
+    "desc": "Kochi(3N)
+    Travel around the foremost highlights of Kochi.
+    Cultural Exploration : Fort Kochi,Jew Town,Santa Cruz Basilica,Hill Palace,Marine Drive
+    Natural Wonders : Athirapilly Waterfalls, Backwaters of Alleppey
+    Activities: Houseboat cruise, Trekking, Bird watching.
+            Accommodation in the mentioned or Similar hotels.
+            Daily Breakfast, Lunch & Dinner Included as per the Inclusions.",
+    "reviews": [],
+    "photo": "https://www.explorebees.com/uploads/Marine%20Drive%20Kochi%20(7).jpg",
+    "featured": true,
+    "geoTitle" : "Athirappilly Water Falls",
+    "geoUrl" : "https://www.google.com/maps/embed?pb=!4v1728932617984!6m8!1m7!1sCAoSLEFGMVFpcE1sRHFNazNrZ1JPay13NktmVS0tUWp2U1NHT3NEUlNwVmVGMWFx!2m2!1d10.28510721770439!2d76.56976433995509!3f94.57822976026388!4f9.58664852957098!5f0.7820865974627469", 
+    "direcTitle" : "",
+    "direcUrl" : "https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d419843.637427942!2d76.07399049568227!3d9.942806758933035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x3b07f923c2abb0d1%3A0x1e7af75aa13af78!2sAthirapally%20Waterfalls%2C%20Pariyaram%2C%20Kerala!3m2!1d10.285107199999999!2d76.5697643!4m5!1s0x3b086d5b5545d815%3A0xd5e37ca63b34376a!2sJew%20Town%2C%20Anavathil%2C%20Kappalandimukku%2C%20Mattancherry%2C%20Kochi%2C%20Kerala!3m2!1d9.9553412!2d76.2602222!4m5!1s0x3b086db163872aa9%3A0x73521902a24c9875!2sSanta%20Cruz%20Basilica%20Cemetery%20Chapel%2C%20Cemetery%20Lavanderia%20Road%2C%20Thamaraparambu%2C%20Veli%2C%20Kochi%2C%20Kerala!3m2!1d9.9518902!2d76.243335!4m5!1s0x3b086d339293f3b3%3A0x915db8c94a43f4d5!2sVasco%20da%20Gama%20Square%2C%20No%3A%20XIV%2F1642%2C%20River%20Road%2C%20Kunnumpuram%20Rd%2C%20Karuvelippady%2C%20Fort%20Kochi%2C%20Kochi%2C%20Kerala%20682001!3m2!1d9.9677474!2d76.24132639999999!4m5!1s0x3b08736028f7d65b%3A0x7500ad4ba75d81a1!2sHill%20Palace%20Museum%2C%20Hill%20Palace%20Road%2C%20Irumpanam%2C%20Thrippunithura%2C%20Kochi%2C%20Ernakulam%2C%20Kerala!3m2!1d9.9526027!2d76.3624724!4m5!1s0x3b080d537fca8aad%3A0x7718d3ac5b6c03ea!2sMarine%20Drive%2C%20Kochi%2C%20Kerala!3m2!1d9.9771685!2d76.2773228!4m5!1s0x3b08804ce9ab3c03%3A0x3fadf9a36669c777!2sBackwater%20Ripples%2C%20Church%20Road%2C%20likkalam%2C%20Kumarakom%2C%20Kerala!3m2!1d9.5886812!2d76.4243448!5e1!3m2!1sen!2sin!4v1728932497412!5m2!1sen!2sin",
+  },
+  {
+    "title": "Picturesque Kerala",
+    "city": "Kerala",
+    "distance": 500,
+    "price": 99,
+    "maxGroupSize": 8,
+    "desc": "Calicut (1N)→Wayanad (2N)→Bekal (2N)
+    Wayanad :
+    Pakshipathalam | Meenmutty waterfalls | Pookode Lake | Edakkal Cave, Banasura Sagar Dam
+    Calicut :
+    Kozhikode Beach | Kappad Beach
+    Bekal :
+    Bekal Fort
+        Accommodation in the mentioned or Similar hotels.
+        Daily Breakfast, Lunch & Dinner Included as per the Inclusions.",
+    "reviews": [],
+    "photo": "https://i.ytimg.com/vi/XSWg58YdrTQ/maxresdefault.jpg",
+    "featured": true,
+    "geoTitle" : "Edakkal Caves",
+    "geoUrl" : "https://www.google.com/maps/embed?pb=!4v1728934232934!6m8!1m7!1sCAoSLEFGMVFpcE11T2xVYXpPZUpoV3ZiM2tQS2d4UkJZRnNPQkdQX3BwcnoxMmkz!2m2!1d11.62579659997075!2d76.23560050474659!3f40!4f20!5f0.7820865974627469", 
+    "direcTitle" : "",
+    "direcUrl" : "https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d3174537.7389467363!2d73.44595496847695!3d10.546998115308037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x3ba480997024825b%3A0xdfa93a3077d7b271!2sBekal%20Fort%2C%20Bekal%20Fort%20Road%2C%20Bekal%2C%20Kerala!3m2!1d12.3929083!2d75.033553!4m5!1s0x3b05cc76a88c34db%3A0xf64e83731e517670!2sMeenmutty%20Waterfalls%2C%20Kallar%20Meenmutty%20Falls%20Road%2C%20Kallar%2C%20Kerala!3m2!1d8.712217599999999!2d77.1452266!4m5!1s0x3ba60f22c50570e3%3A0xdb71297693a9e0df!2sEdakkal%20Caves%2C%20Nenmeni%2C%20Kerala!3m2!1d11.626840699999999!2d76.234269!4m5!1s0x3ba66d88a8d13789%3A0xd47bcc0d3875a678!2sPookode%20Lake%2C%20Pookode%2C%20Kunnathidavaka%2C%20Kerala!3m2!1d11.5424566!2d76.0272233!4m5!1s0x3ba6592f11eb8511%3A0xf103dcf3408d910e!2sKozhikode%20Beach%2C%20Kozhikode%2C%20Kerala!3m2!1d11.262622799999999!2d75.7673095!4m5!1s0x3ba6603cce555555%3A0x1b9c250e6688c21!2sKappad%20Beach%2C%20Beach%2C%20Kappad%2C%20Kerala!3m2!1d11.383881299999999!2d75.7194183!4m5!1s0x3ba5c4f6cc57f69d%3A0x4fee7bfdf75d7a76!2sWXQ6%2B6M6%20Pakshipathalam%2C%20Kottiyoor%2C%20Kerala%20571250!3m2!1d11.9380375!2d75.9616406!5e1!3m2!1sen!2sin!4v1728933911826!5m2!1sen!2sin",
+  },
+  {
+    "title": "Tri Tamil Nadu",
+    "city": "Tamil Nadu",
+    "distance": 363,
+    "price": 36690,
+    "maxGroupSize": 8,
+    "desc": "Madurai (1N)→Rameswaram (2N)→Kanyakumari (1N)→Thiruvananthapuram (1N)
+    City Of Temples And Festivals - Thiruvananthapuram :
+    Sri Padmanabha Swamy Temple
+    Rameswaram :
+    Ramanathaswamy Temple
+    Madurai :
+    Meenakshi Amman Temple
+    Kanyakumari :
+    Vivekananda Rock Memorial
+    ",
+    "reviews": [],
+    "photo": "https://png.pngtree.com/background/20240114/original/pngtree-meenakshi-amman-temple-meenakshi-amman-temple-tamil-nadu-tower-photo-picture-image_7264434.jpg",
+    "featured": true,
+    "geoTitle" : "Vivekananda Rock Memorial",
+    "geoUrl" : "https://www.google.com/maps/embed?pb=!4v1728935219024!6m8!1m7!1sCAoSLEFGMVFpcE5WQi1oNWNtMGpQdWMxN2w3cUxvSEpGdjJKekZsc2cxbmd1MlRn!2m2!1d8.077833484659307!2d77.55572832707499!3f151.12443810560276!4f-19.81290094349869!5f0.7820865974627469", 
+    "direcTitle" : "",
+    "direcUrl" : "https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d2017642.1131847408!2d76.20770286602963!3d8.999062114824111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x3b00c58461e46987%3A0xf134621ce5286703!2sMeenakshi%20Amman%20Temple%2C%20Madurai%20Main%2C%20Madurai%2C%20Tamil%20Nadu!3m2!1d9.9195045!2d78.1193418!4m5!1s0x3b05bba07bee921d%3A0xcd03e3f30b479834!2sSree%20Padmanabha%20Swamy%20Temple%2C%20Fort%2C%20East%20Fort%2C%20Pazhavangadi%2C%20Thiruvananthapuram%2C%20Kerala!3m2!1d8.482781899999999!2d76.94368349999999!4m5!1s0x3b04ed29495d24c1%3A0x7999eb8488b3a3c0!2sVivekananda%20Rock%20Memorial%2C%20Kanniyakumari%2C%20Tamil%20Nadu!3m2!1d8.0778853!2d77.5558698!5e0!3m2!1sen!2sin!4v1728935411612!5m2!1sen!2sin",
+  },
+  {
+    "title": "Varanasi and Prayagraj",
+    "city": "Uttar Pradesh",
+    "distance": 500,
+    "price": 11099,
+    "maxGroupSize": 8,
+    "desc": "Varanasi (2N)→Prayagraj (1N)
+      Evening Ganga Aarti on famous Dashashwamedh Ghat , Visit Kashi Vishwanath Temple,Kashi Vishwanath temple | Annapurna Mandir | Kala Bhairov | Durga Mandir | Sankat Mochan Mandir | Dashashwamedh Ghat | Tulsi Manas Mandir | Benaras Hindu University, Prayagraj - Visit Sangam (confluence) of the Ganga, Yamuna and Sarasvati rivers.
+    ",
+    "reviews": [],
+    "photo": "https://t4.ftcdn.net/jpg/04/08/25/05/360_F_408250543_MVaEVGeWxb4FiFy7mEGKj8nfYkwoAZON.jpg",
+    "featured": true,
+    "geoTitle" : "HarishChandra Ghat",
+    "geoUrl" : "https://www.google.com/maps/embed?pb=!4v1727099775410!6m8!1m7!1sCAoSLEFGMVFpcE1raFFpNWlOMWRGQVU0YjA1SmlvWjBOS2w2WDFHSmJFV1BqNUtm!2m2!1d25.298937!2d83.0071413!3f105.39005720338615!4f8.413620091548381!5f0.7820865974627469", 
+    "direcTitle" : "",
+    "direcUrl" : "https://www.google.com/maps/embed?pb=!1m46!1m12!1m3!1d28856.819788298235!2d82.98742716715343!3d25.30076096921094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m31!3e0!4m5!1s0x398e2e7c6b12a857%3A0x853fb8402317e9c7!2sKaal%20Bhairav%20Temple!3m2!1d25.3176812!2d83.01594999999999!4m5!1s0x398e2e21ee940b17%3A0x48600e4fcdfb7b13!2sShri%20Kashi%20Vishwanath%20Temple!3m2!1d25.3108532!2d83.0106783!4m5!1s0x398e3139b7b23c69%3A0x56bd6ad856d8dbd2!2sGanga%20aarti%20VIP%20seat%20booking%20special%20pooja%20apartment%2C%20Kedar%20ghat%2C%20Bangali%20Tola%2C%20Varanasi%2C%20Uttar%20Pradesh!3m2!1d25.306476!2d83.01027479999999!4m5!1s0x398e31ef732bc0ed%3A0x9c7e601aef8eb164!2s72V4%2BMRP%20Chet%20Singh%20Ghat%2C%20in%20front%20of%20Chet%20Singh%20fort%2C%20Ghats%20of%20Varanasi%2C%20Shivala%2C%20Varanasi%2C%20Uttar%20Pradesh%20221001!3m2!1d25.2942039!2d83.00709189999999!4m5!1s0x398e310b9909e915%3A0xc62cae93ffeb9d2!2zU2Fua2F0IE1vY2hhbiBIYW51bWFuIFRlbXBsZSwgVmFyYW5hc2kg4KS44KSC4KSV4KSfIOCkruCli-CkmuCkqCDgpLngpKjgpYHgpK7gpL7gpKgg4KSu4KSC4KSm4KS_4KSwLCDgpLXgpL7gpLDgpL7gpKPgpLjgpYA!3m2!1d25.282862299999998!2d83.00015979999999!5e0!3m2!1sen!2sin!4v1727165447246!5m2!1sen!2sin",
+  },
+  {
+    "title": "Dwarka Somnath",
+    "city": "Gujarat",
+    "distance": 500,
+    "price": 30499,
+    "maxGroupSize": 8,
+    "desc": "Ahmedabad (1N)→Dwarka (2N)→Somnath (1N)→Diu (1N)→Sasan Gir (1N)
+    Ahmedabad :
+    Vaishno Devi Temple | Akshardham Temple | Gandhi Ashram | Iskon Temple
+    Jamnagar :
+    Lakhota Museum | Lakhota Lake | Bala Hanuman Temple | Lakhota Fort
+    Dwarka :
+    Rukmani Temple | Dwarkadheesh Temple | Nageshwara Jyotirlinga Temple
+    Somnath :
+    Somnath Temple
+    ",
+    "reviews": [],
+    "photo": "https://www.gujaratpackage.com/wp-content/uploads/2023/03/somnath-temple.jpg",
+    "featured": true,
+    "geoTitle" : "Shri Nageshwar Jyotirlinga Temple",
+    "geoUrl" : "https://www.google.com/maps/embed?pb=!4v1728936837205!6m8!1m7!1sCAoSLEFGMVFpcE5MYTZFa0NidGdrYU1lelZwTFdoNDloWDZmT0xfUUpJaWIzcFFC!2m2!1d22.33596364061393!2d69.08700883114611!3f146.97957415457228!4f-2.726777818242283!5f0.7820865974627469", 
+    "direcTitle" : "",
+    "direcUrl" : "https://www.google.com/maps/embed?pb=!1m64!1m12!1m3!1d1885943.933437731!2d69.45031444892922!3d22.59838536061513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m49!3e0!4m5!1s0x395e8479e05f1901%3A0x16cbb1101e5729a3!2sSabarmati%20Ashram!3m2!1d23.0606577!2d72.5803299!4m5!1s0x395e848ac8a7faf3%3A0xf226f03a8c6040e9!2sISKCON%20Temple%2C%20Ahmedabad!3m2!1d23.0282898!2d72.50689129999999!4m5!1s0x395e82bd7cee11cb%3A0x234d85424f9e1cc7!2sShri%20Maa%20Vaishnodevi%20Temple%2C%20Ahmedabad!3m2!1d23.1377819!2d72.54366689999999!4m5!1s0x39576abf3d1e71fd%3A0xa8c4aab3efd3549d!2sLakhota%20Palace%20and%20Museum!3m2!1d22.464725899999998!2d70.0695191!4m5!1s0x39576a87ed4fb3ef%3A0x3e230bc246e2c3ef!2sShri%20Bala%20Hanuman%20Sankirtan%20Temple!3m2!1d22.462813699999998!2d70.0713912!4m5!1s0x39576b0288d4cc41%3A0xb5dee163f4ba85b1!2sRanmal%20Fort!3m2!1d22.464658699999998!2d70.0696679!4m5!1s0x39569c3ab7c4e9e5%3A0x31b7c3111df48f4!2sShree%20Dwarkadhish%20Temple!3m2!1d22.237138599999998!2d68.96769069999999!4m5!1s0x39569e858fa3d85d%3A0xc50d0bfed840e1e3!2sRukmani%20Devi%20Mandir%2C%20Dwarka%2C%20Gujarat!3m2!1d22.257334!2d68.9644821!5e0!3m2!1sen!2sin!4v1728937106952!5m2!1sen!2sin",
+  },
+  {
+    "title": "Jammu Darshan Yatra",
+    "city": "Jammu And Kashmir",
+    "distance": 60,
+    "price": 12999,
+    "maxGroupSize": 8,
+    "desc": "Jammu(1N)→Katra(2N)
+      Jammu :
+      The Bahu Fort | Raghunath Temple
+      Katra :
+      Maa Vaishno Devi
+    ",
+    "reviews": [],
+    "photo": "https://hblimg.mmtcdn.com/content/hubble/img/katra/mmt/activities/t_ufs/m_ardh_kuwari_cave_l_480_640.jpg",
+    "featured": true,
+    "geoTitle" : "Shri Raghunath Temple, Jammu",
+    "geoUrl" : "https://www.google.com/maps/embed?pb=!4v1728937524439!6m8!1m7!1sCAoSLEFGMVFpcFBJdWJybjJ5c21xUllFajZSd3d3cGliRnJFN19LLWU1UU92LTM1!2m2!1d32.73033620758619!2d74.86188564305914!3f285.8780043143479!4f-12.346242494374252!5f0.7820865974627469", 
+    "direcTitle" : "",
+    "direcUrl" : "https://www.google.com/maps/embed?pb=!1m34!1m12!1m3!1d214456.1550613763!2d74.74677845887508!3d32.87496246009794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m19!3e0!4m5!1s0x391e8364abe210bb%3A0x6c5c91f85e558409!2sBahu%20Fort%2C%20Jammu!3m2!1d32.7263032!2d74.8801567!4m5!1s0x391e856f8a2dac73%3A0xe98e876f075b1cc0!2sPVJ6%2B6Q5%20Shri%20Raghunath%20Temple%2C%20Jammu%2C%20Raghunath%20mandir%20chowk%20Jammu%20city%2C%20Jammu%20and%20Kashmir%20180001!3m2!1d32.730336199999996!2d74.8618856!4m5!1s0x391e79b8f64ede31%3A0xad1235ddb72d151f!2sMaa%20Vaishno%20Devi%20Temple%2C%20Jammu%2C%20Bhavan%2C%20Katra!3m2!1d33.0308963!2d74.9486337!5e0!3m2!1sen!2sin!4v1728937611059!5m2!1sen!2sin",
+  },
+  {
+    "title": "Inspiring Nepal",
+    "city": "Nepal",
+    "distance": 220,
+    "price": 26200,
+    "maxGroupSize": 8,
+    "desc": "Kathmandu (2N)→Pokhara (2N)→Nagarkot (1N)
+      Kathmandu: Pashupatinath, Boudhnath, Patan Darbar Square & Swayambhunath StupaPokhara: Views of Annapurna Peaks, Bindebasini Temple, Devi’s Fall, Guteshwor CaveNagarkot: Panoramic view of the major peaks including Mt. Everest.
+    ",
+    "reviews": [],
+    "photo": "https://i.postimg.cc/HLSxS10b/photo-1706188370039-e0cf9bd6ea16.jpg",
+    "featured": true,
+    "geoTitle" : "Shree Bindhyabasini Temple",
+    "geoUrl" : "https://www.google.com/maps/embed?pb=!4v1728938206182!6m8!1m7!1sCAoSLEFGMVFpcE1kUldyWGpwX3B4YjBLV2hFd2ZCckJhc0tOTGUyR1FuR01UVkRB!2m2!1d28.23781936371342!2d83.98421053625086!3f300!4f0!5f0.7820865974627469", 
+    "direcTitle" : "",
+    "direcUrl" : "https://www.google.com/maps/embed?pb=!1m52!1m12!1m3!1d902212.9889904823!2d83.99862608951697!3d27.955031895339257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m37!3e0!4m5!1s0x39eb1bdb45cbc593%3A0x2d0d68684b1d03ab!2sBoudhanath%2C%20Kathmandu%2C%20Nepal!3m2!1d27.7212981!2d85.3575479!4m5!1s0x39eb191aaaaaaaab%3A0x424c7d0a60df9091!2sPashupatinath%20Temple%2C%20Pashupati%20Nath%20Road%2C%20Kathmandu%2044600%2C%20Nepal!3m2!1d27.710511999999998!2d85.3488125!4m5!1s0x39eb19c50daa2fb1%3A0x6f197fa38097b530!2sPatan%20Durbar%20Square%2C%20Lalitpur%2C%20Nepal!3m2!1d27.672698099999998!2d85.3253211!4m5!1s0x39eb190032969f65%3A0x7c23ea4c6dc3c129!2sSwayambhuNath%20Temple%2C%20Kathmandu%2C%20Nepal!3m2!1d27.7150499!2d85.2904995!4m5!1s0x3995945d57d28ba5%3A0xdd52869218279546!2sBindabasini%20Temple%2C%20Pokhara-Baglung%20Highway%2C%20Pokhara%2C%20Nepal!3m2!1d28.237764199999997!2d83.984173!4m5!1s0x399595134e82378f%3A0xb581716c3b162f6b!2sDevi&#39;s%20Fall%2C%20H10%2C%20Pokhara%2C%20Nepal!3m2!1d28.1895642!2d83.9586637!5e0!3m2!1sen!2sin!4v1728938446643!5m2!1sen!2sin",
+  },
+  {
+    "title": "Woods at Sasan Gir, Gujarat",
+    "city": "Gujarat",
+    "distance": 8500,
+    "price": 99,
+    "maxGroupSize": 8,
+    "desc": "Sasan Gir (2N)
+      Woods at Sasan offers luxurious, independent living spaces, each with its own private garden; open skies and surrounded by acres of gently waving grass and thickets of trees
+Air-Conditioned Luxury Accommodations with In- Room Mini Bar & Tea / Coffee Makers
+
+    ",
+    "reviews": [],
+    "photo": " ",
+    "featured": true,
+    "geoTitle" : "",
+    "geoUrl" : " ", 
+    "direcTitle" : "",
+    "direcUrl" : "",
+  },
+  {
+    "title": "Wonderful Gujarat",
+    "city": "Gujarat",
+    "distance": 34500,
+    "price": 99,
+    "maxGroupSize": 8,
+    "desc": "Kevadia (1N)→Vadodara (1N)→Diu (1N)→Sasan Gir (1N)→Somnath (1N)
+    Somnath :
+    Somnath Temple
+    Kevadia :
+    Sardar Sarovar Dam | Valley Flower | Statue of Unity
+    Diu :
+    St. Paul’s church | Diu Fort
+    Vadodara :
+    Nishkalank Mahadev Temple | Fateh Singh Museum & Laxmi Vilas Palace
+    Sasan Gir :
+    Gir National Park
+    ",
+    "reviews": [],
+    "photo": " ",
+    "featured": true,
+    "geoTitle" : "",
+    "geoUrl" : " ", 
+    "direcTitle" : "",
+    "direcUrl" : "",
+  },
+  {
+    "title": "Ranotsav, Gujarat",
+    "city": "Gujarat",
+    "distance": 50,
+    "price": 11199,
+    "maxGroupSize": 8,
+    "desc": "Dholavira (2N)
+      Meals: Breakfast, Lunch & Dinner at the Resort as per itinerary.Fun and entertainment activities at the resort.
+    ",
+    "reviews": [],
+    "photo": " ",
+    "featured": true,
+    "geoTitle" : "",
+    "geoUrl" : " ", 
+    "direcTitle" : "",
+    "direcUrl" : "",
+  },
+  {
+    "title": "Darjiling & Gangtok",
+    "city": "Sikkim",
+    "distance": 500,
+    "price": 36599,
+    "maxGroupSize": 8,
+    "desc": "Gangtok (3N)→Pelling (2N)→Darjeeling (2N)
+      Gangtok :
+Institute of Handicrafts and handlooms | Rumtek Monastery | Tshangu Lake | Ban Jhakri falls | Baba Mandir | Do Drul Chorten | Namgyal Research Institute of Tibetology | Flower Show
+Pelling :
+Yuksom | Khecheopalri Lake | Rimbi Waterfall | Darap Village
+Darjeeling :
+Batasia Loop | Japanese Temple | Padmaja Naidu Himalayan Zoological Park & Himalayan Mountaineering Institute | Ghoom Monastery | Tiger Hills to view sunrise over Kanchendzonga Peak | Japanese Peace Pagoda
+    ",
+    "reviews": [],
+    "photo": " ",
+    "featured": true,
+    "geoTitle" : "",
+    "geoUrl" : " ", 
+    "direcTitle" : "",
+    "direcUrl" : "",
+  },
+  {
+    "title": "Charismatic Meghalaya",
+    "city": "Assam, Meghalaya",
+    "distance": 33500,
+    "price": 99,
+    "maxGroupSize": 8,
+    "desc": "Shillong (3N)→Kaziranga (2N)→Guwahati (1N) 
+      Scenic beauty of Umiam Lake and Umngot RiverCultural experiences in Mawlynnong villageWildlife encounters at Kaziranga National ParkOptional adventures like safaris and river cruises
+    Shillong 
+Umiam LakeDawki RiverSeven Sister WaterfallsDawki RiverUmngot RiverMawlynnongUnique living root bridges
+Kaziranga 
+Kaziranga National Park
+    ",
+    "reviews": [],
+    "photo": " ",
+    "featured": true,
+    "geoTitle" : "",
+    "geoUrl" : " ", 
+    "direcTitle" : "",
+    "direcUrl" : "",
+  },
+  {
+    "title": "Shillong & Guwahati",
+    "city": "Assam",
+    "distance": 500,
+    "price": 26899,
+    "maxGroupSize": 8,
+    "desc": "Shillong (3N)→Guwahati (1N)
+      Shillong
+Witness amazing views from the Shillong Peak, Cherish the beauty of Umiam Lake enroute to Shillong, Soak in the tranquil environment at Cherrapunji, Marvel at the beauty of Seven Sister Waterfalls, Experience crystal-clear waters and scenic beauty at Dawki River, Get mesmerized by the beauty of Umngot River, Explore Asia's cleanest village, Mawlynnong, known for its pristine surroundings, unique living root bridges.
+Guwahati
+Seek blessings at the prestigious Kamakhya Devi Temple
+    ",
+    "reviews": [],
+    "photo": " ",
+    "featured": true,
+    "geoTitle" : "",
+    "geoUrl" : " ", 
+    "direcTitle" : "",
+    "direcUrl" : "",
+  },
+  {
+    "title": "Bhubaneswar And Puri",
+    "city": "Odisha",
+    "distance": 500,
+    "price": 99,
+    "maxGroupSize": 8,
+    "desc": "Puri (2N)→Bhubaneswar (1N)
+      Puri
+      Jagannath TempleGundicha TempleChilika LakeSatapada
+      Bhubaneswar
+      Chandrabhaga beachRamchandi templeKonark (Sun Temple)Dhauli( the Peace pagoda)108 Shivling TemplesLingaraj TempleRajarani TempleMukteshwar TempleParshurameshwaramKhandagiriUdaigiri Jain caves
+    ",
+    "reviews": [],
+    "photo": " ",
+    "featured": true,
+    "geoTitle" : "",
+    "geoUrl" : " ", 
+    "direcTitle" : "",
+    "direcUrl" : "",
+  },
+  {
+    "title": "Mysore And Ooty",
+    "city": "Karnataka",
+    "distance": 500,
+    "price": 33499,
+    "maxGroupSize": 8,
+    "desc": "Coorg (2N)→Mysore (2N)→Ooty (2N)
+      Mysore :
+      Mysore Maharaja Palace | Chamundi Hills | Srirangapatna | St. Philomena’s Church
+      Coorg :
+      Madikeri Fort | Abby Falls | Dubare Elephant Camp | Omkareshwara Temple
+      Ooty :
+      Dodabetta Peak | Botanical Garden | Ooty Lake
+    ",
+    "reviews": [],
+    "photo": " ",
+    "featured": true,
+    "geoTitle" : "",
+    "geoUrl" : " ", 
+    "direcTitle" : "",
+    "direcUrl" : "",
+  },
+  {
+    "title": "Uttarakhand with Sterling",
+    "city": "Uttrakhand",
+    "distance": 500,
+    "price": 99,
+    "maxGroupSize": 8,
+    "desc": " Nainital (2N)→Corbett (1N)→Haridwar (1N)→Mussoorie (2N)
+      All must see sightseeing with entrances : Sat Tal,  Naukuchiya Tal, Bhimtal Lake,  Mall Road, Garjiya Devi Temple, Corbett national park, Corbett museum,  Corbett water fall, Har ki pauri, Chandi Devi Temple, Lal Tibba, Gun Hill, Municipal Gardens, Camel’s Back Road, Mansa Devi,  Kempty falls
+    ",
+    "reviews": [],
+    "photo": " ",
+    "featured": true,
+    "geoTitle" : "",
+    "geoUrl" : " ", 
+    "direcTitle" : "",
+    "direcUrl" : "",
+  },
+]

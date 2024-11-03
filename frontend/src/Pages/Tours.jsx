@@ -1,23 +1,29 @@
-import React,{useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import CommonSection from "../Shared/CommonSection";
-
 import "../Styles/tour.css";
-import tourData from "../assets/data/tours";
 import SearchBar from "./../Shared/SearchBar";
 import TourCard from "./../Shared/TourCard";
 import Newsletter from "./../Shared/Newsletter";
 import { Col, Container, Row } from "reactstrap";
+import useFetch from "../Hooks/useFetch";
+import { BASE_URL } from "../Utils/config";
 
 const Tours = () => {
+  const [pageCount, setPageCount] = useState(0);
+  const [page, setPage] = useState(0);
 
-  const [pageCount, setPageCount] = useState(0)
-  const [page, setPage] = useState(0)
+  const {
+    data: tours,
+    loading,
+    error,
+  } = useFetch(`${BASE_URL}/tours?page=${page}`);
+  const { data: tourCount } = useFetch(`${BASE_URL}/tours/search/getTourCount`);
 
-  useEffect ( () => {
-
-    const pages = Math.ceil(5/ 4)  //Later We will use backend data
+  useEffect(() => {
+    const pages = Math.ceil(tourCount / 8);
     setPageCount(pages);
-  },[page]);
+    window.scrollTo(0,0);
+  }, [page, tourCount, tours]);
 
   return (
     <>
@@ -31,25 +37,31 @@ const Tours = () => {
       </section>
       <section className="pt-0">
         <Container>
-          <Row>
-            {tourData?.map((tour) => (
-              <Col lg="3" className="mb-4" key={tour.id}>
-                <TourCard tour={tour} />{" "}
-              </Col>
-            ))}
+          {loading && <h4 className="text-center pt-5">Loading......</h4>}
+          {error && <h4 className="text-center pt-5">{error}</h4>}
+          {!loading && !error && (
+            <Row>
+              {tours?.map((tour) => (
+                <Col lg="3" className="mb-4" key={tour._id}>
+                  <TourCard tour={tour} />{" "}
+                </Col>
+              ))}
 
-            <Col lg='12'>
-              <div className="pagination d-flex align-items-center justify-content-center mt-4 gap-3">
-                {[...Array(pageCount).keys()].map(number=>(
-                  <span key={number} onClick={()=> setPage(number)}
-                  className={page===number ? "active__page": ""}
-                  >
-                    {number + 1}
-                  </span>
-                ))}
-              </div>        
-            </Col>
-          </Row>
+              <Col lg="12">
+                <div className="pagination d-flex align-items-center justify-content-center mt-4 gap-3">
+                  {[...Array(pageCount).keys()].map((number) => (
+                    <span
+                      key={number}
+                      onClick={() => setPage(number)}
+                      className={page === number ? "active__page" : ""}
+                    >
+                      {number + 1}
+                    </span>
+                  ))}
+                </div>
+              </Col>
+            </Row>
+          )}
         </Container>
       </section>
       <Newsletter />
