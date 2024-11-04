@@ -10,8 +10,7 @@ import Newsletter from "../Shared/Newsletter";
 import useFetch from "../Hooks/useFetch";
 import { BASE_URL } from "../Utils/config";
 import { AuthContext } from "../context/AuthContext";
-{/*             Transfers & Sightseeing by AC Vehicles suitable to the group size.
-            Accommodation in the mentioned or Similar hotels. Daily Breakfast, Lunch & Dinner Included as per the Inclusions. */}
+
 const TourDetails = () => {
   const { id } = useParams();
   const reviewMsgRef = useRef("")
@@ -59,7 +58,7 @@ const TourDetails = () => {
     } catch (err) {
       alert(err.message);
     }
-    //For Check   alert(${reviewText},${tourRating})
+    //For Check alert(${reviewText},${tourRating})
 
   };
 
@@ -67,7 +66,8 @@ const TourDetails = () => {
     window.scrollTo(0,0)
   },[tour]);
 
-  const handleDateChange = (event) => {
+ 
+    const handleDateChange = (event) => {
     setSelectedDate(event.target.value);
   };
 
@@ -77,8 +77,8 @@ const TourDetails = () => {
       return;
     }
 
-    // const apiKey = "3b798f5854678990ae199e0033469294";
     const apiKey = "149a477cdf88f1a01b95c7e2921344ef"; // Replace with your API key
+    //const apiKey = "3b798f5854678990ae199e0033469294";
     const location = tour.city;
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&dt=${selectedDate}`;
@@ -137,6 +137,7 @@ const TourDetails = () => {
             !loading && !error &&
             <Row>
             <Col lg="8">
+
               <div className="tour__content">
                 <img src={photo} alt="" />
 
@@ -192,6 +193,26 @@ const TourDetails = () => {
                         referrerpolicy="no-referrer-when-downgrade"
                       ></iframe>
                   </div>
+{/*
+                  <div>                    
+                      {/* I want to implement here 
+                      <div className="weather-section">
+                      <h2>Weather Forecast</h2>
+                      <div className="date-input-container">
+                        <input
+                          type="date"
+                          id="weather-date"
+                          placeholder="Select Date"
+                          onChange={handleDateChange}
+                        />
+                        <button type="button" onClick={fetchWeatherData} className="btn btn-primary">
+                          Go
+                        </button>
+                      </div>
+                      <div id="weather-data"></div>
+                    </div>
+                  </div>
+
 
                   {/* ... Weather details information */}
 
@@ -216,10 +237,11 @@ const TourDetails = () => {
                       </div>
                     )}
                   </div>
-                <br />
+
                 <div>
+                  
                   <div className="geo_three">
-                      <h2>Intermediate Places Map Of {title}</h2>
+                      <h2>Intermediate Places Of {city}</h2>
                       <iframe
                         src={direcUrl}
                         allowfullscreen=""
