@@ -1,6 +1,7 @@
 import Tour from "../models/Tour.js";
 
 //Create New Tour
+
 export const createTour = async (req, res) => {
   const newTour = new Tour(req.body);
 
@@ -27,6 +28,7 @@ export const createTour = async (req, res) => {
 };
 
 //Update Tour
+
 export const updateTour = async (req,res) => {
     
         const id = req.params.id
@@ -54,6 +56,7 @@ export const updateTour = async (req,res) => {
 }
 
 //Delete Tour
+
 export const deleteTour = async (req,res) => {
     
     const id = req.params.id;
@@ -78,6 +81,7 @@ export const deleteTour = async (req,res) => {
 }
 
 //Get Single Tour
+
 export const getSingleTour = async (req,res) => {
     
     const id = req.params.id;
@@ -102,6 +106,7 @@ export const getSingleTour = async (req,res) => {
 }
 
 //Get All Tour
+
 export const getAllTour = async (req,res) => {
     //For Paging
     const page = parseInt(req.query.page)
@@ -133,6 +138,7 @@ export const getAllTour = async (req,res) => {
 
 
 //get tour by search
+
 export const getTourBySearch = async(req,res)=>{
 
     //here 'i' means case sensitive
@@ -158,6 +164,7 @@ export const getTourBySearch = async(req,res)=>{
 
 
 //Get Featured Tour
+
 export const getFeaturedTour = async (req,res) => {
 
     try {
@@ -182,6 +189,7 @@ export const getFeaturedTour = async (req,res) => {
 };
 
 //get tour counts
+
 export const getTourCount = async(req,res)=>{
     try{
         const tourCount = await Tour.estimatedDocumentCount();
