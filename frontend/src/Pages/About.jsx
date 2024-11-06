@@ -1,17 +1,17 @@
-import React from 'react';
-import About_Us from '../assets/images/About_Us.png';
-import Welcome_hand from '../assets/images/Welcome_hand.png';
-import People_3 from '../assets/images/People_3.png';
-import Mission_Logo from '../assets/images/Mission_Logo.png';
-import Mission_Achieved from '../assets/images/Mission_Achieved.jpg';
-import Customize_Tour from '../assets/images/Customize_Tour.jpg';
-import Expert_Guide from '../assets/images/Expert_Guide.png';
-import Unique_Destination from '../assets/images/Unique_Destination.png';
-import Seamless_Plan from '../assets/images/Seamless_Plan.png';
-import Seamless_Service from '../assets/images/Seamless_Service.png';
-import Quality from '../assets/images/Quality.png';
-import Safety from '../assets/images/Safety.png';
-import Sustainable from '../assets/images/Sustainable.png';
+import React from "react";
+import About_Us from "../assets/images/About_Us.png";
+import Welcome_hand from "../assets/images/Welcome_hand.png";
+import People_3 from "../assets/images/People_3.png";
+import Mission_Logo from "../assets/images/Mission_Logo.png";
+import Mission_Achieved from "../assets/images/Mission_Achieved.jpg";
+import Customize_Tour from "../assets/images/Customize_Tour.jpg";
+import Expert_Guide from "../assets/images/Expert_Guide.png";
+import Unique_Destination from "../assets/images/Unique_Destination.png";
+import Seamless_Plan from "../assets/images/Seamless_Plan.png";
+import Seamless_Service from "../assets/images/Seamless_Service.png";
+import Quality from "../assets/images/Quality.png";
+import Safety from "../assets/images/Safety.png";
+import Sustainable from "../assets/images/Sustainable.png";
 
 import "../Styles/about.css";
 
@@ -70,7 +70,14 @@ const OurMission = () => (
             <img src={Mission_Logo} alt="Mission" />
           </div>
           <div className="about-text">
-            <li>At NextGen Tourism, we believe that travel is more than just a journey from one place to another; it is an opportunity to discover new horizons, create unforgettable memories, and experience the world in ways you never imagined. Our passion for exploration and our commitment to providing exceptional travel experiences are at the heart of everything we do.</li>
+            <li>
+              At NextGen Tourism, we believe that travel is more than just a
+              journey from one place to another; it is an opportunity to
+              discover new horizons, create unforgettable memories, and
+              experience the world in ways you never imagined. Our passion for
+              exploration and our commitment to providing exceptional travel
+              experiences are at the heart of everything we do.
+            </li>
           </div>
         </div>
       </div>
@@ -149,10 +156,18 @@ const Journey = () => (
   <div className="about-container">
     <div className="about-detail">
       <div>
-        <h2>Join a Journey of a Lifetime</h2><br />
+        <h2>Join a Journey of a Lifetime</h2>
+        <br />
       </div>
-      <p>At NextGen Tourism, we are more than just a travel company; we are your partners in adventure. Let us take you on a journey that will broaden your horizons, enrich your life, and leave you with lasting memories. Your next great adventure awaits – let's explore the world together!</p>
-      <p>For more information or to start planning your trip, contact us today.</p>
+      <p>
+        At NextGen Tourism, we are more than just a travel company; we are your
+        partners in adventure. Let us take you on a journey that will broaden
+        your horizons, enrich your life, and leave you with lasting memories.
+        Your next great adventure awaits – let's explore the world together!
+      </p>
+      <p>
+        For more information or to start planning your trip, contact us today.
+      </p>
     </div>
   </div>
 );
