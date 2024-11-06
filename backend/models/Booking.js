@@ -30,7 +30,7 @@ const bookingSchema = new mongoose.Schema(
     },
     pricePack: {
       type: Number,
-      required: true
+      required: true,
     },
 
   },

@@ -31,7 +31,7 @@ const tourSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    price: {
+    pricePack: {
       type: Number,
       required: true,
     },
@@ -39,6 +39,7 @@ const tourSchema = new mongoose.Schema(
       type: Number,
       required: true,
     },
+
     reviews: [
       {
         type: mongoose.Types.ObjectId,
