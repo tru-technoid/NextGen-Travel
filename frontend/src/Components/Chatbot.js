@@ -1,33 +1,34 @@
-import  { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 const Chatbot = () => {
   useEffect(() => {
-    // Create script for chatbot configuration
-    const configScript = document.createElement('script');
-    configScript.type = 'text/javascript';
-    configScript.innerHTML = 'window.chtlConfig = { chatbotId: "2287214655" };';
-    
-    // Append config script to the head
-    document.head.appendChild(configScript);
+    // Inject the first script for Botpress
+    const botpressScript = document.createElement("script");
+    botpressScript.src = "https://cdn.botpress.cloud/webchat/v2.2/inject.js";
+    botpressScript.async = true;
 
-    // Create chatbot embed script
-    const embedScript = document.createElement('script');
-    embedScript.async = true;
-    embedScript.src = 'https://chatling.ai/js/embed.js';
-    embedScript.setAttribute('data-id', '2287214655');
-    embedScript.id = 'chatling-embed-script';
-    
-    // Append embed script to the body
-    document.body.appendChild(embedScript);
-
-    // Cleanup on component unmount
-    return () => {
-      document.head.removeChild(configScript);
-      document.body.removeChild(embedScript);
+    // Once the first script is loaded, inject the second script
+    botpressScript.onload = () => {
+      const customScript = document.createElement("script");
+      customScript.src = "https://files.bpcontent.cloud/2024/10/16/07/20241016075626-44Z8MIEC.js";
+      customScript.async = true;
+      document.body.appendChild(customScript);
     };
-  }, []);
 
-  return null; // No visible UI needed for embedding
+    document.body.appendChild(botpressScript);
+
+    // Cleanup function to remove the scripts when the component is unmounted
+    return () => {
+      if (botpressScript) document.body.removeChild(botpressScript);
+    };
+  }, []); // Empty dependency array ensures this runs only once on mount
+
+  return (
+    <div>
+      {/* Placeholder for Botpress Webchat */}
+      <div id="botpress-webchat" />
+    </div>
+  );
 };
 
 export default Chatbot;

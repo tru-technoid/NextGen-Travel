@@ -11,9 +11,6 @@ const Booking = ({ tour, avgRating }) => {
 
   const { user } = useContext(AuthContext);
 
-  
-  const serviceFee = 100;
-
   const [booking, setBooking] = useState({
     userId : user && user._id,
     userEmail: user && user.email,
@@ -24,8 +21,6 @@ const Booking = ({ tour, avgRating }) => {
     bookAt: "",
   });
 
-  const totalAmount = Number(price) * Number(booking.guestSize) + Number(serviceFee);
-
   const handleChange = (e) => {
     setBooking((prev) => ({
       ...prev,
@@ -33,6 +28,9 @@ const Booking = ({ tour, avgRating }) => {
     }));
   };
 
+  const serviceFee = 100;
+  const totalAmount =
+    Number(price) * Number(booking.guestSize) + Number(serviceFee);
 
   //send data to server
   const handleClick = async (e) => {
