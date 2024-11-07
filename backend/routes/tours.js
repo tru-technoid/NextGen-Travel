@@ -20,7 +20,9 @@ router.get("/", getAllTour);
 
 //Get tour by search
 router.get("/search/getTourBySearch", getTourBySearch);
+
 router.get("/search/getFeaturedTours", getFeaturedTour);
+
 router.get("/search/getTourCount", getTourCount);
 
 export default router;
