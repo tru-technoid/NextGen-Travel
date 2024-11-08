@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./booking.css";
 import { Button, Form, FormGroup, ListGroup, ListGroupItem } from "reactstrap";
 import { useNavigate } from "react-router-dom";
@@ -8,38 +8,54 @@ import { BASE_URL } from "../../Utils/config";
 const Booking = ({ tour, avgRating }) => {
   const { price, reviews, title } = tour;
   const navigate = useNavigate();
-
   const { user } = useContext(AuthContext);
 
   const [booking, setBooking] = useState({
-    userId : user && user._id,
+    userId: user && user._id,
     userEmail: user && user.email,
     tourName: title,
     fullName: "",
     phone: "",
     guestSize: 1,
     bookAt: "",
+    needTravelBuddy: false, // Added new state for travel buddy toggle
+    buddyStatus : "pending",
   });
 
   const handleChange = (e) => {
-    setBooking((prev) => ({
-      ...prev,
-      [e.target.id]: e.target.value,
-    }));
+    const { id, value, checked } = e.target;
+
+    if (id === "needTravelBuddy") {
+      setBooking((prev) => ({
+        ...prev,
+        needTravelBuddy: checked,
+        guestSize: checked ? 1 : prev.guestSize, // Set guestSize to 1 if checked
+      }));
+    } else {
+      setBooking((prev) => ({
+        ...prev,
+        [id]: value,
+      }));
+    }
   };
 
-  const serviceFee = 100;
-  const totalAmount =
-    Number(price) * Number(booking.guestSize) + Number(serviceFee);
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
 
-  //send data to server
+  const serviceFee = 100;
+  const totalAmount = Number(price) * Number(booking.guestSize) + Number(serviceFee);
+
+  // Send data to server
   const handleClick = async (e) => {
     e.preventDefault();
 
-    console.log(booking);
+    if (booking.needTravelBuddy && booking.guestSize > 1) {
+      return alert("If you need a travel buddy, guest size should be 1.");
+    }
 
     try {
-      if (!user || user === undefined || user === null) {
+      if (!user) {
         return alert("Please Sign In !!");
       }
       const res = await fetch(`${BASE_URL}/booking/`, {
@@ -48,7 +64,7 @@ const Booking = ({ tour, avgRating }) => {
           "content-type": "application/json",
         },
         credentials: "include",
-        body: JSON.stringify({...booking,pricePack:totalAmount}),
+        body: JSON.stringify({ ...booking, pricePack: totalAmount}),
       });
 
       const result = await res.json();
@@ -69,7 +85,7 @@ const Booking = ({ tour, avgRating }) => {
           ₹ {price} <span>/ Per person</span>
         </h3>
         <span className="tour__rating d-flex align-items-center">
-          <i class="ri-star-s-fill"></i>
+          <i className="ri-star-s-fill"></i>
           {avgRating === 0 ? null : avgRating} ({reviews?.length})
         </span>
       </div>
@@ -87,6 +103,7 @@ const Booking = ({ tour, avgRating }) => {
               onChange={handleChange}
             />
           </FormGroup>
+          
           <FormGroup>
             <input
               type="number"
@@ -96,25 +113,41 @@ const Booking = ({ tour, avgRating }) => {
               onChange={handleChange}
             />
           </FormGroup>
-          <FormGroup className="d-flex align-items-center gap-3">
+          
+          <FormGroup>
             <input
               type="date"
-              placeholder=""
               id="bookAt"
               required
               onChange={handleChange}
             />
+          </FormGroup>
+          
+          <FormGroup>
             <input
               type="number"
               placeholder="Guest"
               id="guestSize"
               required
+              value={booking.guestSize} // Ensure the input reflects the state
               onChange={handleChange}
             />
           </FormGroup>
+          
+          <FormGroup>
+            <label>Need Travel Buddy :  </label>
+            <label className="toggle-switch">
+              <input
+                type="checkbox"
+                id="needTravelBuddy"
+                checked={booking.needTravelBuddy} // Reflect the state
+                onChange={handleChange}
+              />
+              <span className="slider"></span>
+            </label>
+          </FormGroup>
         </Form>
       </div>
-
       {/* ====Booking Form End==== */}
 
       {/* ====Booking Bottom==== */}

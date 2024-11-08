@@ -20,18 +20,39 @@
     width: 35%;
 }
 
-.nav_items a{
+/* Hover effect for navigation items */
+.nav_items a {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: 500;
     font-size: 1.2rem;
+    position: relative;
+    transition: color 0.3s ease-in-out;
 }
 
-.nav_items a:hover{
-    color: inherit;
+.nav_items a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: var(--secondary-color);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
 }
 
-.nav_items a.active_link{
+.nav_items a:hover {
+    color: var(--secondary-color);
+}
+
+.nav_items a:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+/* Active link styling */
+.nav_items a.active_link {
     color: var(--secondary-color);
 }
 

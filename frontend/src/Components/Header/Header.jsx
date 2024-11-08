@@ -35,6 +35,10 @@ const Header = () => {
     navigate('/')
   }
 
+  const myProfileGo = () => {
+    navigate('/MyProfile')
+  }
+
   const stickyHeaderFunc = () =>{
     window.addEventListener('scroll', ()=>{
       if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){
@@ -80,14 +84,11 @@ const Header = () => {
             </div>
 
           {/* -------------- menu end -------------*/}
-
             <div className="nav__right d-flex align-items-center gap-4">
               <div className="nav__btns d-flex align-items-center gap-4">
                 {
                   user?<>
-                      <h5 className='mb-0'>
-                      {user.username}
-                      </h5>
+                      <Button className='btn btn-dark' onClick={myProfileGo}>{user.username}</Button>
                       <Button className='btn btn-dark' onClick={logout}>Logout</Button>
                   </> :
                   <>
