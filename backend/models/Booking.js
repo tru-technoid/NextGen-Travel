@@ -32,6 +32,14 @@ const bookingSchema = new mongoose.Schema(
       type: Number,
       required: true
     },
+    needTravelBuddy : {
+      type:Boolean,
+      required:true
+    },
+    buddyStatus : {
+      type:String,
+      required:true
+    }
 
   },
   { timestamps: true }
