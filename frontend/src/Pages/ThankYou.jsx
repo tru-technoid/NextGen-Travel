@@ -18,9 +18,11 @@ const ThankYou = () => {
               <h1 className="mb-3 fw-semibold">Thank You</h1>
               <h3 className="mb-4">your tour is successfully booked.</h3>
               <Button className="btn primary__btn w-25">
-                <Link to="/home"> Back To Home </Link>
+                <Link to="/MyProfile"> Go To MyProfile </Link>
               </Button>
             </div>
+            <br />
+            <h5 className="mb-4">Click Above Button To See Booked Tours.</h5>
           </Col>
         </Row>
       </Container>
