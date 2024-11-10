@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import CommonSection from "../Shared/CommonSection";
-import { Col, Container, Row, Card, CardBody, CardTitle, CardText, Button } from "reactstrap";
+import { Col, Container, Row, Card, CardBody, CardTitle, CardText, Button, Alert } from "reactstrap";
 import { AuthContext } from "../context/AuthContext"; 
 import { BASE_URL } from "../Utils/config"; 
 import "../Styles/myProfile.css"
@@ -59,7 +59,7 @@ const MyProfile = () => {
     const userBooking1 = filteredBookingsByTourName.find(bookings => bookings.buddyStatus === "pending" && bookings.needTravelBuddy && bookings.userEmail === user.email)
     console.log(userBooking1);
 
-    if(matchingBooking != null && matchingBooking.bookAt === bookAt1){
+    if(matchingBooking != null && matchingBooking.bookAt == bookAt1){
       const updatedBooking = {"buddyStatus":`Matched With ${user.email}`};
       
       await fetch(`${BASE_URL}/booking/${matchingBooking._id}`,{
@@ -70,11 +70,12 @@ const MyProfile = () => {
       console.log("UPDATING Booking :",updatedBooking)
       alert("Successfully Matched Found Get Details Soon. Please Reload The Page To get update !!");
     } 
+    
     if(matchingBooking!=null){
     console.log(matchingBooking._id)
     }
 
-    if(matchingBooking != null && userBooking1.bookAt===bookAt1){
+    if(matchingBooking != null && userBooking1.bookAt==bookAt1){
 
       const updatedBooking1 = { "buddyStatus":`Matched With ${matchingBooking.userEmail}`};
       if(userBooking1!=null){
