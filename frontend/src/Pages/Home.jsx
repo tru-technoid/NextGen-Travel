@@ -131,17 +131,17 @@ const Home = () => {
             <div className="counter_wrapper d-flex align-items-center gap-6">
             <ScrollTrigger className="d-flex align-items-center gap-5" onEnter={()=> setCounterOn(true)} onExit={()=> setCounterOn(false)}>
               <div className="counter_box">
-                <span>{counterOn && <CountUp start={0} end={10} duration={3} delay={0} />} <span>k+</span> </span>
+                <span>{counterOn && <CountUp start={0} end={10} duration={5} delay={0} />} <span>k+</span> </span>
                 <h6>Successful Trip</h6>
               </div>
 
               <div className="counter_box">
-                <span>{counterOn && <CountUp start={0} end={2} duration={3} delay={0} />} <span>k+</span> </span>
+                <span>{counterOn && <CountUp start={0} end={2} duration={5} delay={0} />} <span>k+</span> </span>
                 <h6>Regular Client</h6>
               </div>
 
               <div className="counter_box">
-                <span>{counterOn && <CountUp start={0} end={10} duration={3} delay={0}/> } <span>+</span> </span>
+                <span>{counterOn && <CountUp start={0} end={10} duration={5} delay={0}/> } <span>+</span> </span>
                 <h6>Year experience</h6>
               </div>
             </ScrollTrigger>

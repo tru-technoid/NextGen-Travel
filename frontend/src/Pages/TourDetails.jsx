@@ -10,8 +10,7 @@ import Newsletter from "../Shared/Newsletter";
 import useFetch from "../Hooks/useFetch";
 import { BASE_URL } from "../Utils/config";
 import { AuthContext } from "../context/AuthContext";
-{/*             Transfers & Sightseeing by AC Vehicles suitable to the group size.
-            Accommodation in the mentioned or Similar hotels. Daily Breakfast, Lunch & Dinner Included as per the Inclusions. */}
+
 const TourDetails = () => {
   const { id } = useParams();
   const reviewMsgRef = useRef("")
