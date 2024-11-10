@@ -18,18 +18,78 @@ const Booking = ({ tour, avgRating }) => {
     phone: "",
     guestSize: 1,
     bookAt: "",
-    needTravelBuddy: false, // Added new state for travel buddy toggle
-    buddyStatus : "pending",
+    needTravelBuddy: false,
+    buddyStatus: "pending",
   });
+
+  const [errors, setErrors] = useState({ phone: "", fullName: "", bookAt: "" });
 
   const handleChange = (e) => {
     const { id, value, checked } = e.target;
-
+  
     if (id === "needTravelBuddy") {
       setBooking((prev) => ({
         ...prev,
         needTravelBuddy: checked,
-        guestSize: checked ? 1 : prev.guestSize, // Set guestSize to 1 if checked
+        guestSize: checked ? 1 : prev.guestSize,
+      }));
+    } else if (id === "phone") {
+      // Allow only numeric input and limit to 10 digits
+      if (/^\d{0,10}$/.test(value)) {
+        setBooking((prev) => ({
+          ...prev,
+          phone: value,
+        }));
+        setErrors((prev) => ({
+          ...prev,
+          phone: value.length === 10 ? "" : "Phone number should be exactly 10 digits.",
+        }));
+      }
+    } else if (id === "fullName") {
+      // Allow only alphabetic input
+      if (/^[a-zA-Z\s]*$/.test(value)) {
+        setBooking((prev) => ({
+          ...prev,
+          fullName: value,
+        }));
+        setErrors((prev) => ({ ...prev, fullName: "" }));
+      } else {
+        setErrors((prev) => ({
+          ...prev,
+          fullName: "Full name should contain only alphabetic characters.",
+        }));
+      }
+    } else if (id === "bookAt") {
+      const today = new Date();
+      const selectedDate = new Date(value);
+      const tomorrow = new Date(today);
+      tomorrow.setDate(today.getDate() + 0);
+  
+      if (selectedDate >= tomorrow) {
+        setBooking((prev) => ({
+          ...prev,
+          bookAt: value,
+        }));
+        setErrors((prev) => ({
+          ...prev,
+          bookAt: "",
+        }));
+      } else {
+        setErrors((prev) => ({
+          ...prev,
+          bookAt: "Booking date should be from today onward.",
+        }));
+      }
+    } else if (id === "guestSize") {
+      // Ensure guestSize is 1 or more
+      const parsedValue = Math.max(1, parseInt(value, 10) || 1);
+      setBooking((prev) => ({
+        ...prev,
+        guestSize: parsedValue,
+      }));
+      setErrors((prev) => ({
+        ...prev,
+        guestSize: parsedValue >= 1 ? "" : "Guest size should be 1 or more.",
       }));
     } else {
       setBooking((prev) => ({
@@ -37,21 +97,27 @@ const Booking = ({ tour, avgRating }) => {
         [id]: value,
       }));
     }
-  };
+  };  
 
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }, []);
 
   const serviceFee = 100;
   const totalAmount = Number(price) * Number(booking.guestSize) + Number(serviceFee);
 
-  // Send data to server
   const handleClick = async (e) => {
     e.preventDefault();
 
     if (booking.needTravelBuddy && booking.guestSize > 1) {
       return alert("If you need a travel buddy, guest size should be 1.");
+    }
+
+    if (booking.phone.length !== 10) {
+      return alert("Phone number should be exactly 10 digits.");
+    }
+    if (errors.bookAt || !booking.bookAt) {
+      return alert("Please select a valid booking date starting from tomorrow.");
     }
 
     try {
@@ -64,7 +130,7 @@ const Booking = ({ tour, avgRating }) => {
           "content-type": "application/json",
         },
         credentials: "include",
-        body: JSON.stringify({ ...booking, pricePack: totalAmount}),
+        body: JSON.stringify({ ...booking, pricePack: totalAmount }),
       });
 
       const result = await res.json();
@@ -90,7 +156,6 @@ const Booking = ({ tour, avgRating }) => {
         </span>
       </div>
 
-      {/* ====Booking Form Start==== */}
       <div className="booking__form">
         <h5>Information</h5>
         <Form className="booking__info-form" onSubmit={handleClick}>
@@ -100,47 +165,53 @@ const Booking = ({ tour, avgRating }) => {
               placeholder="Full Name"
               id="fullName"
               required
+              value={booking.fullName}
               onChange={handleChange}
             />
+            {errors.fullName && <p className="error-text">{errors.fullName}</p>}
           </FormGroup>
-          
+
           <FormGroup>
             <input
               type="number"
               placeholder="Phone"
               id="phone"
               required
+              value={booking.phone}
               onChange={handleChange}
             />
+            {errors.phone && <p className="error-text">{errors.phone}</p>}
           </FormGroup>
-          
+
           <FormGroup>
             <input
               type="date"
               id="bookAt"
               required
               onChange={handleChange}
+              min={new Date().toISOString().split("T")[0]}
             />
+            {errors.bookAt && <p className="error-text">{errors.bookAt}</p>}
           </FormGroup>
-          
+
           <FormGroup>
             <input
               type="number"
               placeholder="Guest"
               id="guestSize"
               required
-              value={booking.guestSize} // Ensure the input reflects the state
+              value={booking.guestSize}
               onChange={handleChange}
             />
           </FormGroup>
-          
+
           <FormGroup>
-            <label>Need Travel Buddy :  </label>
+            <label>Need Travel Buddy : </label>
             <label className="toggle-switch">
               <input
                 type="checkbox"
                 id="needTravelBuddy"
-                checked={booking.needTravelBuddy} // Reflect the state
+                checked={booking.needTravelBuddy}
                 onChange={handleChange}
               />
               <span className="slider"></span>
@@ -148,9 +219,7 @@ const Booking = ({ tour, avgRating }) => {
           </FormGroup>
         </Form>
       </div>
-      {/* ====Booking Form End==== */}
 
-      {/* ====Booking Bottom==== */}
       <div className="booking__bottom">
         <ListGroup>
           <ListGroupItem className="border-0 px-0">
