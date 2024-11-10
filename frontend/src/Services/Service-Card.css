@@ -6,7 +6,8 @@
 }
 
 .service_item:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
+    zoom: normal;
 }
 
 .service_img{
