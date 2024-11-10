@@ -1,0 +1,25 @@
+{
+  "name": "nextgen-travel",
+  "version": "1.0.0",
+  "description": "NextGen Travel is a comprehensive tourism website designed to address common travel challenges and enhance the overall travel planning experience. Travelers often face issues finding reliable companions, accessing accurate weather forecasts, and managing group logistics. NextGen Travel addresses these needs with several key features:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.10.0",
+    "mongoose": "^8.8.1"
+  }
+}
