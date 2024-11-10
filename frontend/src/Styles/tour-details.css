@@ -71,11 +71,26 @@
     border: 1px solid var(--secondary-color);
 }
 
+
 .review__input input{
     width: 100%;
     padding: 0.5rem 0;
     border: none;
 }
+
+.primary__btn button {
+    background-color: var(--primary-color); /* Default button color */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .primary__btn button:hover {
+    background-color: lightblue; /* Color on hover */
+  }
 
 .review__input input:focus{
     outline: none;
@@ -213,6 +228,280 @@
     background-color: #ccc;
   }
   
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pop {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Tour Content Image Animation */
+.tour__content img {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 2.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease;
+}
+
+.tour__content img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Tour Info */
+.tour__info, 
+.tour__reviews {
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    border: 1px solid rgb(229, 231, 235);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease;
+}
+
+.tour__info:hover, .tour__reviews:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.tour__info h2{
+    font-size: 1.5rem;
+}
+
+.tour__info span{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-style: 1rem;
+    color: var(--text-color);
+}
+
+.tour__info span i{
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.tour__info span i:hover {
+    color: #ffcc00;
+}
+
+/* Extra Details Animation */
+.tour__extra-details {
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tour__extra-details span {
+    font-size: 1rem;
+}
+
+.tour__extra-details span i {
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.tour__extra-details span:hover i {
+    color: var(--secondary-color);
+}
+
+/* Day Card Animation */
+.day_card {
+    display: inline-block;
+    padding: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(120, 140, 136, 0.245);
+    width: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.day_card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.day_text {
+    display: flex;
+    align-items: center;
+}
+
+.day_item h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffffff;
+    animation: fadeIn 0.5s ease;
+}
+
+.day_item span {
+    font-size: 14px;
+    color: #beb3b3;
+}
+
+/* Button Hover Effect */
+.btn.btn-primary {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn.btn-primary:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Rating Stars Animation */
+.rating__group span {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.rating__group span:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Weather Section */
+.weather-section {
+    margin-top: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    animation: fadeIn 1s ease;
+}
+
+.weather-section h2 {
+    margin-bottom: 1rem;
+}
+
+.date-input-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#weather-date {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 3px;
+    transition: border-color 0.3s ease;
+}
+
+#weather-date:focus {
+    border-color: #333;
+}
+
+#weather-data {
+    margin-top: 1rem;
+}
+
+/* Review Section Animation */
+.review__item {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease;
+}
+
+.review__item img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.review__item img:hover {
+    transform: scale(1.1);
+}
+
+/* Geo Map Animation */
+.geo_three {
+    padding: 15px;
+    box-shadow:  rgba(0,0,0,0.2) 0 4px 16px 0;
+    border:0;
+    transition: transform 0.3s ease;
+}
+
+.geo_three:hover {
+    transform: scale(1.02);
+}
+
+.geo_three iframe {
+    width: 760px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.geo_three h2 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    animation: pop 0.5s ease;
+}
+
+.rating__group span {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    color: #ccc; /* Default color for unselected stars */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .rating__group span:hover {
+    color: var(--secondary-color); /* Color on hover */
+  }
+  
+
+/* Responsive adjustments */
+@media only screen and (max-width:768px) {
+    .tour__extra-details {
+        flex-wrap: wrap;
+        row-gap: 1rem;
+    }
+
+    .tour__extra-details span {
+        font-size: 0.9rem;
+    }
+
+    .tour__extra-details span i {
+        font-size: 1rem;
+    }
+
+    .geo_three iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 
 @media only screen and (max-width:768px){

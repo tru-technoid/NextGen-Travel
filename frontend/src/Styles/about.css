@@ -38,12 +38,13 @@
     width: 100%; /* Scale to fit container */
     max-width: 250px; /* Limit max size */
     height: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Add transition for filter */
 }
 
 .about-latest-article img:hover,
 .about-box img:hover {
     transform: scale(1.05); /* Slight zoom on hover */
+    filter: brightness(0.9); /* Darken image on hover */
 }
 
 /* Article Box Styles */
@@ -56,11 +57,12 @@
     flex: 1 1 calc(45% - 20px); /* Responsive box size */
     display: flex;
     align-items: center;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transition for transform */
 }
 
 .about-box:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
 }
 
 .about-image {
