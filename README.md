@@ -31,7 +31,7 @@ To get started with the project, follow the setup instructions provided in the `
 ### Prerequisites
 - **Node.js** and **npm**: Ensure Node.js is installed. [Download it here](https://nodejs.org/).
 - **MongoDB**: Install MongoDB locally or set up a remote MongoDB instance.
-- **Postman"": Use to create, test, and manage APIs, Send and Receive API requests.
+- **Postman**: Use to create, test, and manage APIs, Send and Receive API requests.
 
 ---
 
