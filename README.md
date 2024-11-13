@@ -26,7 +26,7 @@ The project is organized as follows :
 
 ## Installation
 
-To get started with the project, follow the setup instructions provided in the `frontend/README.md` and `backend/README.md` files in their respective folders.
+To get started with the **project**, follow the setup instructions provided in the `frontend/README.md` and `backend/README.md` files in their respective folders.
 
 ### Prerequisites
 - **Node.js** and **npm**: Ensure Node.js is installed. [Download it here](https://nodejs.org/).
