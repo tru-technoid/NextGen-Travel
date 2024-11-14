@@ -74,7 +74,7 @@ We welcome contributions! To get started:
 
 ### Contact
 
-For any questions or support, reach out to [trushadowspecter261@gmail.com](mailto:trushadowspecter261@gmail.com).
+For any **questions** or support, reach out to [trushadowspecter261@gmail.com](mailto:trushadowspecter261@gmail.com).
 
 ---
 
