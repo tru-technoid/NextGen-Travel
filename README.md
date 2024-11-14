@@ -51,7 +51,7 @@ To get started with the **project**, follow the setup instructions provided in t
 
 ### Running the Application
 
-Once both the frontend and backend are set up, the application should be accessible at `http://localhost:3000` for the frontend, with the backend running on `http://localhost:4000`.
+Once both the **frontend** and backend are set up, the application should be accessible at `http://localhost:3000` for the frontend, with the backend running on `http://localhost:4000`.
 
 ---
 
