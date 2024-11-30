@@ -76,8 +76,7 @@ const TourDetails = () => {
       return;
     }
 
-    // const apiKey = "3b798f5854678990ae199e0033469294";
-    const apiKey = "149a477cdf88f1a01b95c7e2921344ef"; // Replace with your API key
+    const apiKey =   // Replace with your API key
     const location = tour.city;
 
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&dt=${selectedDate}`;
