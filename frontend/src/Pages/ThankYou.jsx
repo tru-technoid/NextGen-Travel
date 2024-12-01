@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Col, Container, Row } from "reactstrap";
 import '../Styles/thank-you.css'
 import Newsletter from "./../Shared/Newsletter";
 
+
+
 const ThankYou = () => {
+  
+  useEffect(() => {
+    window.scrollTo(0,0)
+  },[]);
+
   return (
     <>
     <section>

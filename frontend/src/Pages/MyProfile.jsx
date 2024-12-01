@@ -12,6 +12,7 @@ const MyProfile = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    window.scrollTo(0,0)
     const fetchBookings = async () => {
       if (!user) return; // If no user, do not fetch
       //console.log(Alert())
@@ -59,7 +60,8 @@ const MyProfile = () => {
     const userBooking1 = filteredBookingsByTourName.find(bookings => bookings.buddyStatus === "pending" && bookings.needTravelBuddy && bookings.userEmail === user.email)
     console.log(userBooking1);
 
-    if(matchingBooking != null && matchingBooking.bookAt == bookAt1){
+
+    if(matchingBooking != null && matchingBooking.bookAt==userBooking1.bookAt){
       const updatedBooking = {"buddyStatus":`Matched With ${user.email}`};
       
       await fetch(`${BASE_URL}/booking/${matchingBooking._id}`,{
@@ -75,7 +77,7 @@ const MyProfile = () => {
     console.log(matchingBooking._id)
     }
 
-    if(matchingBooking != null && userBooking1.bookAt==bookAt1){
+    if(matchingBooking != null && userBooking1.bookAt==matchingBooking.bookAt){
 
       const updatedBooking1 = { "buddyStatus":`Matched With ${matchingBooking.userEmail}`};
       if(userBooking1!=null){
