@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Col, Container, Form, FormGroup, Row,Button } from "reactstrap";
 import "../Styles/login.css";
@@ -8,7 +8,13 @@ import UserIcon from "../assets/images/user.jpg";
 import { AuthContext } from "../context/AuthContext";
 import { BASE_URL } from "../Utils/config";
 
+
 const Login = () => {
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  },[]);
+
   const [credentials, setCredentials] = useState({
     email: undefined,
     password: undefined,
