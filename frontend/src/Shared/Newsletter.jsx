@@ -18,8 +18,8 @@ const Newsletter = () => {
                         <input type="email" placeholder="Enter your email" />
                         <button className="btn newsletter_btn">Subscribe</button>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Dicta numquam deserunt quia mollitia esse ipsam!</p> 
+                    <p>It is very important for the customer to pay attention to the adipiscing process. 
+                        Words never fail because resilience is itself!</p> 
                 </div>
             </Col>
             <Col lg='6'>

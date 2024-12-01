@@ -26,7 +26,7 @@ const quick_links =[
 
 const quick_links2 =[
   {
-    path: "/gallery",
+    path: "/home",
     display: "Gallery"
   },
 
@@ -53,7 +53,10 @@ const Footer = () => {
             <div className="logo">
               <img src={logo} alt="" />
             </div>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, voluptas.</p>
+              <p>
+                Travel & Feel The Peace  With Us.
+                Words never fail because 
+                 resilience is itself !! </p>
 
               <div className="social_links d-flex align-items-center gap-4">
                 <span>
@@ -129,7 +132,7 @@ const Footer = () => {
                   Email:
               </h6>
 
-              <p className="mb-0">abcxyz@gmail.com</p>
+              <p className="mb-0">nextgen@travel.in</p>
             </ListGroupItem>
                     
 
