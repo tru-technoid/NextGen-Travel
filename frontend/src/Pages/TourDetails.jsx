@@ -78,7 +78,6 @@ const TourDetails = () => {
 
     const apiKey =  ;// Replace with your API key
     const location = tour.city;
-
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&dt=${selectedDate}`;
 
     try {
