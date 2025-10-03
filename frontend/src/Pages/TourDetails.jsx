@@ -13,7 +13,7 @@ import { AuthContext } from "../context/AuthContext";
 
 const TourDetails = () => {
   const { id } = useParams();
-  const reviewMsgRef = useRef("")
+  const reviewMsgRef = useRef(null);
   const [tourRating, setTourRating]=useState(null);
   const {user} = useContext(AuthContext);
 
@@ -76,7 +76,7 @@ const TourDetails = () => {
       return;
     }
 
-    const apiKey =  ;// Replace with your API key
+    const apiKey = "YOUR_API_KEY"; // Replace with your API key
     const location = tour.city;
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${apiKey}&dt=${selectedDate}`;
 
@@ -168,25 +168,25 @@ const TourDetails = () => {
                       )}
                     </span>
                     <span>
-                      <i class="ri-map-pin-user-fill"></i>
+                      <i className="ri-map-pin-user-fill"></i>
                       {address}
                     </span>
                   </div>
 
                   <div className="tour__extra-details">
                     <span>
-                      <i class="ri-map-pin-2-line"></i>
+                      <i className="ri-map-pin-2-line"></i>
                       {city}
                     </span>
                     <span>
                     ₹ {price} / per person
                     </span>
                     <span>
-                      <i class="ri-map-pin-time-line"></i>
+                      <i className="ri-map-pin-time-line"></i>
                       {distance} k/m
                     </span>
                     <span>
-                      <i class="ri-group-line"></i>
+                      <i className="ri-group-line"></i>
                       {maxGroupSize} people
                     </span>
                   </div>
@@ -196,11 +196,11 @@ const TourDetails = () => {
                   <br />
                   <div className="geo_three">
                       <h2>360 View Of {geoTitle}</h2>
-                      <iframe
-                        src={geoUrl}
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
+                      <iframe 
+                        src={geoUrl} 
+                        allowFullScreen 
+                        loading="lazy" 
+                        referrerPolicy="no-referrer-when-downgrade"
                       ></iframe>
                   </div>
 
@@ -256,19 +256,19 @@ const TourDetails = () => {
                     <Form onSubmit={submitHandler}>
                       <div className="d-flex align-items-center gap-3 mb-4 rating__group">
                         <span onClick={()=> setTourRating(1)}>
-                          1 <i class="ri-star-s-fill"></i>
+                          1 <i className="ri-star-s-fill"></i>
                         </span>
                         <span onClick={()=> setTourRating(2)}>
-                          2 <i class="ri-star-s-fill"></i>
+                          2 <i className="ri-star-s-fill"></i>
                         </span>
                         <span onClick={()=> setTourRating(3)}>
-                          3 <i class="ri-star-s-fill"></i>
+                          3 <i className="ri-star-s-fill"></i>
                         </span>
                         <span onClick={()=> setTourRating(4)}>
-                          4 <i class="ri-star-s-fill"></i>
+                          4 <i className="ri-star-s-fill"></i>
                         </span>
                         <span onClick={()=> setTourRating(5)}>
-                          5 <i class="ri-star-s-fill"></i>
+                          5 <i className="ri-star-s-fill"></i>
                         </span>
                       </div>
 
@@ -284,8 +284,8 @@ const TourDetails = () => {
                     </Form>
 
                     <ListGroup className="user__reviews">
-                      {reviews?.map((review) => (
-                        <div className="review__item">
+                      {reviews?.map((review,index) => (
+                        <div key={index} className="review__item">
                           <img src={avatar} alt="Img Not Load" />
                           <div className="w-100">
                             <div className="d-flex align-items-center justify-content-between">
@@ -299,7 +299,7 @@ const TourDetails = () => {
                                 </p>
                               </div>
                               <span className="d-flex align-items-center">
-                                {review.rating}<i class="ri-star-s-fill"></i>
+                                {review.rating}<i className="ri-star-s-fill"></i>
                               </span>
                             </div>
                             <h6>{review.reviewText}</h6>
